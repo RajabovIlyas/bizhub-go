@@ -1,0 +1,967 @@
+**************************************
+  Name: OjoCronService
+  Created at: 14/12/2022 14:57:08
+**************************************
+
+14/12/2022 14:57:09 | channelCron() - Started at: 2022-12-14 14:57:09.2020458 +0500 +05 m=+0.960834601
+14/12/2022 14:57:09 | AddListener() - `discount_removed` listener added
+14/12/2022 14:57:09 | AddListener() - `add_discount` listener added
+14/12/2022 14:57:09 | AddListener() - `auction_finished` listener added
+14/12/2022 14:57:09 | AddListener() - `auction_removed` listener added
+14/12/2022 14:57:09 | AddListener() - `permission_started` listener added
+14/12/2022 14:57:09 | AddListener() - `permission_ended` listener added
+14/12/2022 14:57:39 | expiredJobsCron() - getting expired jobs 2022-12-14 14:57:39.2184466 +0500 +05 m=+30.977235401
+14/12/2022 14:58:09 | expiredJobsCron() - getting expired jobs 2022-12-14 14:58:09.2046324 +0500 +05 m=+60.963421201
+14/12/2022 14:58:39 | expiredJobsCron() - getting expired jobs 2022-12-14 14:58:39.2162698 +0500 +05 m=+90.975058601
+14/12/2022 14:59:09 | expiredJobsCron() - getting expired jobs 2022-12-14 14:59:09.2024787 +0500 +05 m=+120.961267501
+14/12/2022 14:59:39 | expiredJobsCron() - getting expired jobs 2022-12-14 14:59:39.2094004 +0500 +05 m=+150.968189201
+14/12/2022 15:00:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:00:09.2139025 +0500 +05 m=+180.972691301
+14/12/2022 15:00:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:00:39.2070658 +0500 +05 m=+210.965854601
+14/12/2022 15:01:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:01:09.2059461 +0500 +05 m=+240.964734901
+14/12/2022 15:01:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:01:39.2097362 +0500 +05 m=+270.968525001
+14/12/2022 15:02:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:02:09.2097367 +0500 +05 m=+300.968525501
+14/12/2022 15:02:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:02:39.2037979 +0500 +05 m=+330.962586701
+14/12/2022 15:03:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:03:09.204994 +0500 +05 m=+360.963782801
+14/12/2022 15:03:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:03:39.2070122 +0500 +05 m=+390.965801001
+14/12/2022 15:04:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:04:09.2138896 +0500 +05 m=+420.972678401
+14/12/2022 15:04:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:04:39.2166808 +0500 +05 m=+450.975469601
+14/12/2022 15:05:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:05:09.2125802 +0500 +05 m=+480.971369001
+14/12/2022 15:05:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:05:39.2092304 +0500 +05 m=+510.968019201
+14/12/2022 15:06:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:06:09.2114282 +0500 +05 m=+540.970217001
+14/12/2022 15:06:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:06:39.2143885 +0500 +05 m=+570.973177301
+14/12/2022 15:07:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:07:09.2162587 +0500 +05 m=+600.975047501
+14/12/2022 15:07:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:07:39.2131248 +0500 +05 m=+630.971913601
+14/12/2022 15:08:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:08:09.2113074 +0500 +05 m=+660.970096201
+14/12/2022 15:08:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:08:39.2065308 +0500 +05 m=+690.965319601
+14/12/2022 15:09:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:09:09.2151679 +0500 +05 m=+720.973956701
+14/12/2022 15:09:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:09:39.2021955 +0500 +05 m=+750.960984301
+14/12/2022 15:10:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:10:09.2155281 +0500 +05 m=+780.974316901
+14/12/2022 15:10:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:10:39.2166036 +0500 +05 m=+810.975392401
+14/12/2022 15:11:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:11:09.209228 +0500 +05 m=+840.968016801
+14/12/2022 15:11:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:11:39.2180806 +0500 +05 m=+870.976869401
+14/12/2022 15:12:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:12:09.2138512 +0500 +05 m=+900.972640001
+14/12/2022 15:12:39 | expiredJobsCron() - getting expired jobs 2022-12-14 15:12:39.2079497 +0500 +05 m=+930.966738501
+14/12/2022 15:13:09 | expiredJobsCron() - getting expired jobs 2022-12-14 15:13:09.2142384 +0500 +05 m=+960.973027201
+14/12/2022 15:13:35 | AddListener() - `discount_removed` listener added
+14/12/2022 15:13:35 | AddListener() - `add_discount` listener added
+14/12/2022 15:13:35 | AddListener() - `auction_finished` listener added
+14/12/2022 15:13:35 | AddListener() - `auction_removed` listener added
+14/12/2022 15:13:35 | AddListener() - `permission_started` listener added
+14/12/2022 15:13:35 | AddListener() - `permission_ended` listener added
+14/12/2022 15:13:35 | channelCron() - Started at: 2022-12-14 15:13:35.8003245 +0500 +05 m=+0.687620501
+14/12/2022 15:14:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:14:05.8157794 +0500 +05 m=+30.703075401
+14/12/2022 15:14:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:14:35.8103123 +0500 +05 m=+60.697608301
+14/12/2022 15:15:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:15:05.8136362 +0500 +05 m=+90.700932201
+14/12/2022 15:15:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:15:35.8029082 +0500 +05 m=+120.690204201
+14/12/2022 15:16:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:16:05.8170454 +0500 +05 m=+150.704341401
+14/12/2022 15:16:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:16:35.8032933 +0500 +05 m=+180.690589301
+14/12/2022 15:17:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:17:05.8151809 +0500 +05 m=+210.702476901
+14/12/2022 15:17:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:17:35.8129247 +0500 +05 m=+240.700220701
+14/12/2022 15:18:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:18:05.8016435 +0500 +05 m=+270.688939501
+14/12/2022 15:18:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:18:35.8159655 +0500 +05 m=+300.703261501
+14/12/2022 15:19:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:19:05.8147843 +0500 +05 m=+330.702080301
+14/12/2022 15:19:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:19:35.8038929 +0500 +05 m=+360.691188901
+14/12/2022 15:20:12 | AddListener() - `discount_removed` listener added
+14/12/2022 15:20:12 | AddListener() - `add_discount` listener added
+14/12/2022 15:20:12 | AddListener() - `auction_finished` listener added
+14/12/2022 15:20:12 | AddListener() - `auction_removed` listener added
+14/12/2022 15:20:12 | AddListener() - `permission_started` listener added
+14/12/2022 15:20:12 | AddListener() - `permission_ended` listener added
+14/12/2022 15:20:12 | channelCron() - Started at: 2022-12-14 15:20:12.0197991 +0500 +05 m=+0.684623901
+14/12/2022 15:20:42 | expiredJobsCron() - getting expired jobs 2022-12-14 15:20:42.0243088 +0500 +05 m=+30.689133601
+14/12/2022 15:21:12 | expiredJobsCron() - getting expired jobs 2022-12-14 15:21:12.0238313 +0500 +05 m=+60.688656101
+14/12/2022 15:21:42 | expiredJobsCron() - getting expired jobs 2022-12-14 15:21:42.0243689 +0500 +05 m=+90.689193701
+14/12/2022 15:22:32 | AddListener() - `discount_removed` listener added
+14/12/2022 15:22:32 | channelCron() - Started at: 2022-12-14 15:22:32.4212734 +0500 +05 m=+0.690779901
+14/12/2022 15:22:32 | AddListener() - `add_discount` listener added
+14/12/2022 15:22:32 | AddListener() - `auction_finished` listener added
+14/12/2022 15:22:32 | AddListener() - `auction_removed` listener added
+14/12/2022 15:22:32 | AddListener() - `permission_started` listener added
+14/12/2022 15:22:32 | AddListener() - `permission_ended` listener added
+14/12/2022 15:23:02 | expiredJobsCron() - getting expired jobs 2022-12-14 15:23:02.4239676 +0500 +05 m=+30.693474101
+14/12/2022 15:23:32 | expiredJobsCron() - getting expired jobs 2022-12-14 15:23:32.4251403 +0500 +05 m=+60.694646801
+14/12/2022 15:23:49 | AddListener() - `discount_removed` listener added
+14/12/2022 15:23:49 | AddListener() - `add_discount` listener added
+14/12/2022 15:23:49 | AddListener() - `auction_finished` listener added
+14/12/2022 15:23:49 | AddListener() - `auction_removed` listener added
+14/12/2022 15:23:49 | AddListener() - `permission_started` listener added
+14/12/2022 15:23:49 | AddListener() - `permission_ended` listener added
+14/12/2022 15:23:49 | channelCron() - Started at: 2022-12-14 15:23:49.9341981 +0500 +05 m=+0.676903401
+14/12/2022 15:24:24 | AddListener() - `discount_removed` listener added
+14/12/2022 15:24:24 | AddListener() - `add_discount` listener added
+14/12/2022 15:24:24 | AddListener() - `auction_finished` listener added
+14/12/2022 15:24:24 | AddListener() - `auction_removed` listener added
+14/12/2022 15:24:24 | AddListener() - `permission_started` listener added
+14/12/2022 15:24:24 | AddListener() - `permission_ended` listener added
+14/12/2022 15:24:24 | channelCron() - Started at: 2022-12-14 15:24:24.7137221 +0500 +05 m=+0.698249601
+14/12/2022 15:24:54 | expiredJobsCron() - getting expired jobs 2022-12-14 15:24:54.7140989 +0500 +05 m=+30.698626401
+14/12/2022 15:25:24 | expiredJobsCron() - getting expired jobs 2022-12-14 15:25:24.725955 +0500 +05 m=+60.710482501
+14/12/2022 15:25:54 | expiredJobsCron() - getting expired jobs 2022-12-14 15:25:54.7242804 +0500 +05 m=+90.708807901
+14/12/2022 15:26:24 | expiredJobsCron() - getting expired jobs 2022-12-14 15:26:24.7156166 +0500 +05 m=+120.700144101
+14/12/2022 15:26:54 | expiredJobsCron() - getting expired jobs 2022-12-14 15:26:54.7283873 +0500 +05 m=+150.712914801
+14/12/2022 15:27:24 | expiredJobsCron() - getting expired jobs 2022-12-14 15:27:24.7177394 +0500 +05 m=+180.702266901
+14/12/2022 15:27:54 | expiredJobsCron() - getting expired jobs 2022-12-14 15:27:54.7154079 +0500 +05 m=+210.699935401
+14/12/2022 15:28:31 | channelCron() - Started at: 2022-12-14 15:28:31.6875779 +0500 +05 m=+0.675918001
+14/12/2022 15:28:31 | AddListener() - `discount_removed` listener added
+14/12/2022 15:28:31 | AddListener() - `add_discount` listener added
+14/12/2022 15:28:31 | AddListener() - `auction_finished` listener added
+14/12/2022 15:28:31 | AddListener() - `auction_removed` listener added
+14/12/2022 15:28:31 | AddListener() - `permission_started` listener added
+14/12/2022 15:28:31 | AddListener() - `permission_ended` listener added
+14/12/2022 15:29:01 | expiredJobsCron() - getting expired jobs 2022-12-14 15:29:01.698714 +0500 +05 m=+30.687054101
+14/12/2022 15:29:31 | expiredJobsCron() - getting expired jobs 2022-12-14 15:29:31.6932775 +0500 +05 m=+60.681617601
+14/12/2022 15:30:01 | expiredJobsCron() - getting expired jobs 2022-12-14 15:30:01.6920347 +0500 +05 m=+90.680374801
+14/12/2022 15:30:31 | expiredJobsCron() - getting expired jobs 2022-12-14 15:30:31.6963193 +0500 +05 m=+120.684659401
+14/12/2022 15:31:01 | expiredJobsCron() - getting expired jobs 2022-12-14 15:31:01.7022323 +0500 +05 m=+150.690572401
+14/12/2022 15:31:31 | expiredJobsCron() - getting expired jobs 2022-12-14 15:31:31.7028269 +0500 +05 m=+180.691167001
+14/12/2022 15:32:15 | channelCron() - Started at: 2022-12-14 15:32:15.0885108 +0500 +05 m=+0.696477801
+14/12/2022 15:32:15 | AddListener() - `discount_removed` listener added
+14/12/2022 15:32:15 | AddListener() - `add_discount` listener added
+14/12/2022 15:32:15 | AddListener() - `auction_finished` listener added
+14/12/2022 15:32:15 | AddListener() - `auction_removed` listener added
+14/12/2022 15:32:15 | AddListener() - `permission_started` listener added
+14/12/2022 15:32:15 | AddListener() - `permission_ended` listener added
+14/12/2022 15:32:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:32:45.1055078 +0500 +05 m=+30.713474801
+14/12/2022 15:33:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:33:15.0953045 +0500 +05 m=+60.703271501
+14/12/2022 15:33:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:33:45.1014096 +0500 +05 m=+90.709376601
+14/12/2022 15:34:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:34:15.1025421 +0500 +05 m=+120.710509101
+14/12/2022 15:34:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:34:45.0916328 +0500 +05 m=+150.699599801
+14/12/2022 15:35:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:35:15.0949611 +0500 +05 m=+180.702928101
+14/12/2022 15:35:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:35:45.0954377 +0500 +05 m=+210.703404701
+14/12/2022 15:36:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:36:15.1027022 +0500 +05 m=+240.710669201
+14/12/2022 15:36:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:36:45.1027088 +0500 +05 m=+270.710675801
+14/12/2022 15:37:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:37:15.0943858 +0500 +05 m=+300.702352801
+14/12/2022 15:37:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:37:45.0925613 +0500 +05 m=+330.700528301
+14/12/2022 15:38:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:38:15.1043515 +0500 +05 m=+360.712318501
+14/12/2022 15:38:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:38:45.0980389 +0500 +05 m=+390.706005901
+14/12/2022 15:39:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:39:15.0910652 +0500 +05 m=+420.699032201
+14/12/2022 15:39:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:39:45.0958125 +0500 +05 m=+450.703779501
+14/12/2022 15:40:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:40:15.0994023 +0500 +05 m=+480.707369301
+14/12/2022 15:40:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:40:45.100665 +0500 +05 m=+510.708632001
+14/12/2022 15:41:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:41:15.0987729 +0500 +05 m=+540.706739901
+14/12/2022 15:41:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:41:45.0963282 +0500 +05 m=+570.704295201
+14/12/2022 15:42:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:42:15.10199 +0500 +05 m=+600.709957001
+14/12/2022 15:42:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:42:45.0998556 +0500 +05 m=+630.707822601
+14/12/2022 15:43:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:43:15.104565 +0500 +05 m=+660.712532001
+14/12/2022 15:43:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:43:45.090028 +0500 +05 m=+690.697995001
+14/12/2022 15:44:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:44:15.0937271 +0500 +05 m=+720.701694101
+14/12/2022 15:44:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:44:45.0945818 +0500 +05 m=+750.702548801
+14/12/2022 15:45:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:45:15.0956719 +0500 +05 m=+780.703638901
+14/12/2022 15:45:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:45:45.1041549 +0500 +05 m=+810.712121901
+14/12/2022 15:46:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:46:15.1035399 +0500 +05 m=+840.711506901
+14/12/2022 15:46:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:46:45.0975064 +0500 +05 m=+870.705473401
+14/12/2022 15:47:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:47:15.1017371 +0500 +05 m=+900.709704101
+14/12/2022 15:47:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:47:45.093634 +0500 +05 m=+930.701601001
+14/12/2022 15:48:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:48:15.0930325 +0500 +05 m=+960.700999501
+14/12/2022 15:48:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:48:45.1011546 +0500 +05 m=+990.709121601
+14/12/2022 15:49:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:49:15.1037044 +0500 +05 m=+1020.711671401
+14/12/2022 15:49:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:49:45.0993088 +0500 +05 m=+1050.707275801
+14/12/2022 15:50:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:50:15.0962523 +0500 +05 m=+1080.704219301
+14/12/2022 15:50:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:50:45.1023645 +0500 +05 m=+1110.710331501
+14/12/2022 15:51:15 | AddListener() - `discount_removed` listener added
+14/12/2022 15:51:15 | AddListener() - `add_discount` listener added
+14/12/2022 15:51:15 | AddListener() - `auction_finished` listener added
+14/12/2022 15:51:15 | AddListener() - `auction_removed` listener added
+14/12/2022 15:51:15 | AddListener() - `permission_started` listener added
+14/12/2022 15:51:15 | AddListener() - `permission_ended` listener added
+14/12/2022 15:51:15 | channelCron() - Started at: 2022-12-14 15:51:15.8069842 +0500 +05 m=+0.680204101
+14/12/2022 15:51:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:51:45.8101823 +0500 +05 m=+30.683402201
+14/12/2022 15:52:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:52:15.8207504 +0500 +05 m=+60.693970301
+14/12/2022 15:52:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:52:45.8198017 +0500 +05 m=+90.693021601
+14/12/2022 15:53:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:53:15.8198944 +0500 +05 m=+120.693114301
+14/12/2022 15:53:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:53:45.81508 +0500 +05 m=+150.688299901
+14/12/2022 15:54:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:54:15.81291 +0500 +05 m=+180.686129901
+14/12/2022 15:54:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:54:45.8197189 +0500 +05 m=+210.692938801
+14/12/2022 15:55:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:55:15.8116246 +0500 +05 m=+240.684844501
+14/12/2022 15:55:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:55:45.8161519 +0500 +05 m=+270.689371801
+14/12/2022 15:56:15 | expiredJobsCron() - getting expired jobs 2022-12-14 15:56:15.8114722 +0500 +05 m=+300.684692101
+14/12/2022 15:56:45 | expiredJobsCron() - getting expired jobs 2022-12-14 15:56:45.8103863 +0500 +05 m=+330.683606201
+14/12/2022 15:57:10 | AddListener() - `discount_removed` listener added
+14/12/2022 15:57:10 | AddListener() - `add_discount` listener added
+14/12/2022 15:57:10 | AddListener() - `auction_finished` listener added
+14/12/2022 15:57:10 | AddListener() - `auction_removed` listener added
+14/12/2022 15:57:10 | AddListener() - `permission_started` listener added
+14/12/2022 15:57:10 | AddListener() - `permission_ended` listener added
+14/12/2022 15:57:10 | channelCron() - Started at: 2022-12-14 15:57:10.8888664 +0500 +05 m=+0.674921801
+14/12/2022 15:57:40 | expiredJobsCron() - getting expired jobs 2022-12-14 15:57:40.8955586 +0500 +05 m=+30.681614001
+14/12/2022 15:58:05 | AddListener() - `discount_removed` listener added
+14/12/2022 15:58:05 | AddListener() - `add_discount` listener added
+14/12/2022 15:58:05 | AddListener() - `auction_finished` listener added
+14/12/2022 15:58:05 | AddListener() - `auction_removed` listener added
+14/12/2022 15:58:05 | AddListener() - `permission_started` listener added
+14/12/2022 15:58:05 | AddListener() - `permission_ended` listener added
+14/12/2022 15:58:05 | channelCron() - Started at: 2022-12-14 15:58:05.6076147 +0500 +05 m=+0.689194801
+14/12/2022 15:58:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:58:35.6227877 +0500 +05 m=+30.704367801
+14/12/2022 15:59:05 | expiredJobsCron() - getting expired jobs 2022-12-14 15:59:05.6153529 +0500 +05 m=+60.696933001
+14/12/2022 15:59:35 | expiredJobsCron() - getting expired jobs 2022-12-14 15:59:35.616477 +0500 +05 m=+90.698057101
+14/12/2022 16:00:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:00:05.6113065 +0500 +05 m=+120.692886601
+14/12/2022 16:00:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:00:35.6111107 +0500 +05 m=+150.692690801
+14/12/2022 16:01:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:01:05.616455 +0500 +05 m=+180.698035101
+14/12/2022 16:01:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:01:35.6209967 +0500 +05 m=+210.702576801
+14/12/2022 16:02:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:02:05.6127425 +0500 +05 m=+240.694322601
+14/12/2022 16:02:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:02:35.609945 +0500 +05 m=+270.691525101
+14/12/2022 16:03:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:03:05.6137538 +0500 +05 m=+300.695333901
+14/12/2022 16:03:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:03:35.6214169 +0500 +05 m=+330.702997001
+14/12/2022 16:04:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:04:05.6165983 +0500 +05 m=+360.698178401
+14/12/2022 16:04:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:04:35.6108187 +0500 +05 m=+390.692398801
+14/12/2022 16:05:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:05:05.6221922 +0500 +05 m=+420.703772301
+14/12/2022 16:05:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:05:35.6103616 +0500 +05 m=+450.691941701
+14/12/2022 16:06:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:06:05.6160757 +0500 +05 m=+480.697655801
+14/12/2022 16:06:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:06:35.6135367 +0500 +05 m=+510.695116801
+14/12/2022 16:07:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:07:05.6228718 +0500 +05 m=+540.704451901
+14/12/2022 16:07:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:07:35.6084944 +0500 +05 m=+570.690074501
+14/12/2022 16:08:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:08:05.6093203 +0500 +05 m=+600.690900401
+14/12/2022 16:08:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:08:35.6147348 +0500 +05 m=+630.696314901
+14/12/2022 16:09:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:09:05.6207296 +0500 +05 m=+660.702309701
+14/12/2022 16:09:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:09:35.6213667 +0500 +05 m=+690.702946801
+14/12/2022 16:10:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:10:05.6154637 +0500 +05 m=+720.697043801
+14/12/2022 16:10:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:10:35.6219854 +0500 +05 m=+750.703565501
+14/12/2022 16:11:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:11:05.6140629 +0500 +05 m=+780.695643001
+14/12/2022 16:11:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:11:35.6100716 +0500 +05 m=+810.691651701
+14/12/2022 16:12:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:12:05.6224144 +0500 +05 m=+840.703994501
+14/12/2022 16:12:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:12:35.6159459 +0500 +05 m=+870.697526001
+14/12/2022 16:13:05 | AddListener() - `discount_removed` listener added
+14/12/2022 16:13:05 | AddListener() - `add_discount` listener added
+14/12/2022 16:13:05 | AddListener() - `auction_finished` listener added
+14/12/2022 16:13:05 | AddListener() - `auction_removed` listener added
+14/12/2022 16:13:05 | AddListener() - `permission_started` listener added
+14/12/2022 16:13:05 | AddListener() - `permission_ended` listener added
+14/12/2022 16:13:05 | channelCron() - Started at: 2022-12-14 16:13:05.5531174 +0500 +05 m=+0.695622501
+14/12/2022 16:13:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:13:35.5535589 +0500 +05 m=+30.696064001
+14/12/2022 16:14:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:14:05.5545224 +0500 +05 m=+60.697027501
+14/12/2022 16:14:35 | expiredJobsCron() - getting expired jobs 2022-12-14 16:14:35.5604151 +0500 +05 m=+90.702920201
+14/12/2022 16:15:05 | expiredJobsCron() - getting expired jobs 2022-12-14 16:15:05.5604269 +0500 +05 m=+120.702932001
+14/12/2022 16:15:25 | AddListener() - `discount_removed` listener added
+14/12/2022 16:15:25 | AddListener() - `add_discount` listener added
+14/12/2022 16:15:25 | AddListener() - `auction_finished` listener added
+14/12/2022 16:15:25 | AddListener() - `auction_removed` listener added
+14/12/2022 16:15:25 | AddListener() - `permission_started` listener added
+14/12/2022 16:15:25 | AddListener() - `permission_ended` listener added
+14/12/2022 16:15:25 | channelCron() - Started at: 2022-12-14 16:15:25.4183288 +0500 +05 m=+0.693687601
+14/12/2022 16:15:55 | expiredJobsCron() - getting expired jobs 2022-12-14 16:15:55.4189981 +0500 +05 m=+30.694356901
+14/12/2022 16:16:25 | expiredJobsCron() - getting expired jobs 2022-12-14 16:16:25.4203631 +0500 +05 m=+60.695721901
+14/12/2022 16:16:51 | AddListener() - `discount_removed` listener added
+14/12/2022 16:16:51 | AddListener() - `add_discount` listener added
+14/12/2022 16:16:51 | AddListener() - `auction_finished` listener added
+14/12/2022 16:16:51 | channelCron() - Started at: 2022-12-14 16:16:51.0295844 +0500 +05 m=+0.664517601
+14/12/2022 16:16:51 | AddListener() - `auction_removed` listener added
+14/12/2022 16:16:51 | AddListener() - `permission_started` listener added
+14/12/2022 16:16:51 | AddListener() - `permission_ended` listener added
+14/12/2022 16:17:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:17:21.0359899 +0500 +05 m=+30.670923101
+14/12/2022 16:17:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:17:51.0370864 +0500 +05 m=+60.672019601
+14/12/2022 16:18:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:18:21.0449347 +0500 +05 m=+90.679867901
+14/12/2022 16:18:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:18:51.0363403 +0500 +05 m=+120.671273501
+14/12/2022 16:19:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:19:21.0431759 +0500 +05 m=+150.678109101
+14/12/2022 16:19:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:19:51.0334442 +0500 +05 m=+180.668377401
+14/12/2022 16:20:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:20:21.038588 +0500 +05 m=+210.673521201
+14/12/2022 16:20:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:20:51.0343579 +0500 +05 m=+240.669291101
+14/12/2022 16:21:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:21:21.0319449 +0500 +05 m=+270.666878101
+14/12/2022 16:21:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:21:51.0400891 +0500 +05 m=+300.675022301
+14/12/2022 16:22:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:22:21.0350833 +0500 +05 m=+330.670016501
+14/12/2022 16:22:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:22:51.0339889 +0500 +05 m=+360.668922101
+14/12/2022 16:23:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:23:21.0347837 +0500 +05 m=+390.669716901
+14/12/2022 16:23:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:23:51.0353649 +0500 +05 m=+420.670298101
+14/12/2022 16:24:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:24:21.0387676 +0500 +05 m=+450.673700801
+14/12/2022 16:24:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:24:51.0426345 +0500 +05 m=+480.677567701
+14/12/2022 16:25:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:25:21.0436412 +0500 +05 m=+510.678574401
+14/12/2022 16:25:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:25:51.0307133 +0500 +05 m=+540.665646501
+14/12/2022 16:26:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:26:21.0306563 +0500 +05 m=+570.665589501
+14/12/2022 16:26:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:26:51.0389874 +0500 +05 m=+600.673920601
+14/12/2022 16:27:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:27:21.0413266 +0500 +05 m=+630.676259801
+14/12/2022 16:27:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:27:51.0367778 +0500 +05 m=+660.671711001
+14/12/2022 16:28:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:28:21.0375279 +0500 +05 m=+690.672461101
+14/12/2022 16:28:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:28:51.0316647 +0500 +05 m=+720.666597901
+14/12/2022 16:29:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:29:21.0340829 +0500 +05 m=+750.669016101
+14/12/2022 16:29:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:29:51.0311789 +0500 +05 m=+780.666112101
+14/12/2022 16:30:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:30:21.0405727 +0500 +05 m=+810.675505901
+14/12/2022 16:30:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:30:51.0334448 +0500 +05 m=+840.668378001
+14/12/2022 16:31:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:31:21.0361481 +0500 +05 m=+870.671081301
+14/12/2022 16:31:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:31:51.0359212 +0500 +05 m=+900.670854401
+14/12/2022 16:32:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:32:21.040523 +0500 +05 m=+930.675456201
+14/12/2022 16:32:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:32:51.0396138 +0500 +05 m=+960.674547001
+14/12/2022 16:33:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:33:21.0449221 +0500 +05 m=+990.679855301
+14/12/2022 16:33:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:33:51.0540687 +0500 +05 m=+1020.689001901
+14/12/2022 16:34:21 | expiredJobsCron() - getting expired jobs 2022-12-14 16:34:21.0346227 +0500 +05 m=+1050.669555901
+14/12/2022 16:34:51 | expiredJobsCron() - getting expired jobs 2022-12-14 16:34:51.0419394 +0500 +05 m=+1080.676872601
+14/12/2022 16:35:04 | AddListener() - `discount_removed` listener added
+14/12/2022 16:35:04 | AddListener() - `add_discount` listener added
+14/12/2022 16:35:04 | AddListener() - `auction_finished` listener added
+14/12/2022 16:35:04 | AddListener() - `auction_removed` listener added
+14/12/2022 16:35:04 | AddListener() - `permission_started` listener added
+14/12/2022 16:35:04 | AddListener() - `permission_ended` listener added
+14/12/2022 16:35:04 | channelCron() - Started at: 2022-12-14 16:35:04.7316523 +0500 +05 m=+0.695805501
+14/12/2022 16:35:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:35:34.7349241 +0500 +05 m=+30.699077301
+14/12/2022 16:36:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:36:04.739912 +0500 +05 m=+60.704065201
+14/12/2022 16:36:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:36:34.7412506 +0500 +05 m=+90.705403801
+14/12/2022 16:37:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:37:04.7342152 +0500 +05 m=+120.698368401
+14/12/2022 16:37:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:37:34.7334794 +0500 +05 m=+150.697632601
+14/12/2022 16:38:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:38:04.7386235 +0500 +05 m=+180.702776701
+14/12/2022 16:38:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:38:34.7432032 +0500 +05 m=+210.707356401
+14/12/2022 16:39:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:39:04.7445697 +0500 +05 m=+240.708722901
+14/12/2022 16:39:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:39:34.7417536 +0500 +05 m=+270.705906801
+14/12/2022 16:40:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:40:04.7438176 +0500 +05 m=+300.707970801
+14/12/2022 16:40:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:40:34.7432025 +0500 +05 m=+330.707355701
+14/12/2022 16:41:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:41:04.7465785 +0500 +05 m=+360.710731701
+14/12/2022 16:41:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:41:34.746448 +0500 +05 m=+390.710601201
+14/12/2022 16:42:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:42:04.7452052 +0500 +05 m=+420.709358401
+14/12/2022 16:42:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:42:34.7416194 +0500 +05 m=+450.705772601
+14/12/2022 16:43:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:43:04.7327048 +0500 +05 m=+480.696858001
+14/12/2022 16:43:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:43:34.7463238 +0500 +05 m=+510.710477001
+14/12/2022 16:44:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:44:04.7435127 +0500 +05 m=+540.707665901
+14/12/2022 16:44:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:44:34.7375941 +0500 +05 m=+570.701747301
+14/12/2022 16:45:04 | expiredJobsCron() - getting expired jobs 2022-12-14 16:45:04.7428024 +0500 +05 m=+600.706955601
+14/12/2022 16:45:34 | expiredJobsCron() - getting expired jobs 2022-12-14 16:45:34.7319272 +0500 +05 m=+630.696080401
+14/12/2022 16:46:09 | AddListener() - `discount_removed` listener added
+14/12/2022 16:46:09 | AddListener() - `add_discount` listener added
+14/12/2022 16:46:09 | AddListener() - `auction_finished` listener added
+14/12/2022 16:46:09 | AddListener() - `auction_removed` listener added
+14/12/2022 16:46:09 | AddListener() - `permission_started` listener added
+14/12/2022 16:46:09 | AddListener() - `permission_ended` listener added
+14/12/2022 16:46:09 | channelCron() - Started at: 2022-12-14 16:46:09.4340346 +0500 +05 m=+0.687321801
+14/12/2022 16:46:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:46:39.4350865 +0500 +05 m=+30.688373701
+14/12/2022 16:47:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:47:09.4358653 +0500 +05 m=+60.689152501
+14/12/2022 16:47:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:47:39.4420296 +0500 +05 m=+90.695316801
+14/12/2022 16:48:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:48:09.4427533 +0500 +05 m=+120.696040501
+14/12/2022 16:48:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:48:39.4343539 +0500 +05 m=+150.687641101
+14/12/2022 16:49:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:49:09.4464197 +0500 +05 m=+180.699706901
+14/12/2022 16:49:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:49:39.4438486 +0500 +05 m=+210.697135801
+14/12/2022 16:50:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:50:09.4383905 +0500 +05 m=+240.691677701
+14/12/2022 16:50:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:50:39.4462409 +0500 +05 m=+270.699528101
+14/12/2022 16:51:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:51:09.4413532 +0500 +05 m=+300.694640401
+14/12/2022 16:51:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:51:39.4363839 +0500 +05 m=+330.689671101
+14/12/2022 16:52:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:52:09.4486064 +0500 +05 m=+360.701893601
+14/12/2022 16:52:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:52:39.4398642 +0500 +05 m=+390.693151401
+14/12/2022 16:53:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:53:09.4471281 +0500 +05 m=+420.700415301
+14/12/2022 16:53:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:53:39.4359358 +0500 +05 m=+450.689223001
+14/12/2022 16:54:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:54:09.4453931 +0500 +05 m=+480.698680301
+14/12/2022 16:54:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:54:39.4365144 +0500 +05 m=+510.689801601
+14/12/2022 16:55:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:55:09.4363023 +0500 +05 m=+540.689589501
+14/12/2022 16:55:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:55:39.4371054 +0500 +05 m=+570.690392601
+14/12/2022 16:56:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:56:09.4386477 +0500 +05 m=+600.691934901
+14/12/2022 16:56:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:56:39.4396766 +0500 +05 m=+630.692963801
+14/12/2022 16:57:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:57:09.4486723 +0500 +05 m=+660.701959501
+14/12/2022 16:57:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:57:39.4391352 +0500 +05 m=+690.692422401
+14/12/2022 16:58:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:58:09.4363155 +0500 +05 m=+720.689602701
+14/12/2022 16:58:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:58:39.4381789 +0500 +05 m=+750.691466101
+14/12/2022 16:59:09 | expiredJobsCron() - getting expired jobs 2022-12-14 16:59:09.4481888 +0500 +05 m=+780.701476001
+14/12/2022 16:59:39 | expiredJobsCron() - getting expired jobs 2022-12-14 16:59:39.4406107 +0500 +05 m=+810.693897901
+14/12/2022 17:00:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:00:09.4449924 +0500 +05 m=+840.698279601
+14/12/2022 17:00:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:00:39.4360623 +0500 +05 m=+870.689349501
+14/12/2022 17:01:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:01:09.4388942 +0500 +05 m=+900.692181401
+14/12/2022 17:01:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:01:39.4446853 +0500 +05 m=+930.697972501
+14/12/2022 17:02:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:02:09.4482276 +0500 +05 m=+960.701514801
+14/12/2022 17:02:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:02:39.4354742 +0500 +05 m=+990.688761401
+14/12/2022 17:03:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:03:09.4446526 +0500 +05 m=+1020.697939801
+14/12/2022 17:03:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:03:39.4481785 +0500 +05 m=+1050.701465701
+14/12/2022 17:04:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:04:09.4464245 +0500 +05 m=+1080.699711701
+14/12/2022 17:04:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:04:39.4378537 +0500 +05 m=+1110.691140901
+14/12/2022 17:05:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:05:09.4454802 +0500 +05 m=+1140.698767401
+14/12/2022 17:05:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:05:39.4426306 +0500 +05 m=+1170.695917801
+14/12/2022 17:06:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:06:09.4368633 +0500 +05 m=+1200.690150501
+14/12/2022 17:06:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:06:39.4445105 +0500 +05 m=+1230.697797701
+14/12/2022 17:07:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:07:09.43843 +0500 +05 m=+1260.691717201
+14/12/2022 17:07:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:07:39.4448488 +0500 +05 m=+1290.698136001
+14/12/2022 17:08:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:08:09.438007 +0500 +05 m=+1320.691294201
+14/12/2022 17:08:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:08:39.4370158 +0500 +05 m=+1350.690303001
+14/12/2022 17:09:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:09:09.4438964 +0500 +05 m=+1380.697183601
+14/12/2022 17:09:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:09:39.4393945 +0500 +05 m=+1410.692681701
+14/12/2022 17:10:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:10:09.4363461 +0500 +05 m=+1440.689633301
+14/12/2022 17:10:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:10:39.4363954 +0500 +05 m=+1470.689682601
+14/12/2022 17:11:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:11:09.4478549 +0500 +05 m=+1500.701142101
+14/12/2022 17:11:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:11:39.4423656 +0500 +05 m=+1530.695652801
+14/12/2022 17:12:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:12:09.4418306 +0500 +05 m=+1560.695117801
+14/12/2022 17:12:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:12:39.4421476 +0500 +05 m=+1590.695434801
+14/12/2022 17:13:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:13:09.4487716 +0500 +05 m=+1620.702058801
+14/12/2022 17:13:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:13:39.4349175 +0500 +05 m=+1650.688204701
+14/12/2022 17:14:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:14:09.4351681 +0500 +05 m=+1680.688455301
+14/12/2022 17:14:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:14:39.4355923 +0500 +05 m=+1710.688879501
+14/12/2022 17:15:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:15:09.4378408 +0500 +05 m=+1740.691128001
+14/12/2022 17:15:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:15:39.4363238 +0500 +05 m=+1770.689611001
+14/12/2022 17:16:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:16:09.4417357 +0500 +05 m=+1800.695022901
+14/12/2022 17:16:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:16:39.4364227 +0500 +05 m=+1830.689709901
+14/12/2022 17:17:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:17:09.440369 +0500 +05 m=+1860.693656201
+14/12/2022 17:17:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:17:39.4399106 +0500 +05 m=+1890.693197801
+14/12/2022 17:18:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:18:09.4422419 +0500 +05 m=+1920.695529101
+14/12/2022 17:18:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:18:39.4492759 +0500 +05 m=+1950.702563101
+14/12/2022 17:19:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:19:09.439498 +0500 +05 m=+1980.692785201
+14/12/2022 17:19:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:19:39.4479735 +0500 +05 m=+2010.701260701
+14/12/2022 17:20:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:20:09.4361772 +0500 +05 m=+2040.689464401
+14/12/2022 17:20:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:20:39.4470747 +0500 +05 m=+2070.700361901
+14/12/2022 17:21:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:21:09.4400318 +0500 +05 m=+2100.693319001
+14/12/2022 17:21:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:21:39.443433 +0500 +05 m=+2130.696720201
+14/12/2022 17:22:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:22:09.4353983 +0500 +05 m=+2160.688685501
+14/12/2022 17:22:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:22:39.4422465 +0500 +05 m=+2190.695533701
+14/12/2022 17:23:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:23:09.4480345 +0500 +05 m=+2220.701321701
+14/12/2022 17:23:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:23:39.4366863 +0500 +05 m=+2250.689973501
+14/12/2022 17:24:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:24:09.4351501 +0500 +05 m=+2280.688437301
+14/12/2022 17:24:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:24:39.4503753 +0500 +05 m=+2310.703662501
+14/12/2022 17:25:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:25:09.4355743 +0500 +05 m=+2340.688861501
+14/12/2022 17:25:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:25:39.4429694 +0500 +05 m=+2370.696256601
+14/12/2022 17:26:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:26:09.4431992 +0500 +05 m=+2400.696486401
+14/12/2022 17:26:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:26:39.4430805 +0500 +05 m=+2430.696367701
+14/12/2022 17:27:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:27:09.4408302 +0500 +05 m=+2460.694117401
+14/12/2022 17:27:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:27:39.4474589 +0500 +05 m=+2490.700746101
+14/12/2022 17:28:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:28:09.4480415 +0500 +05 m=+2520.701328701
+14/12/2022 17:28:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:28:39.440047 +0500 +05 m=+2550.693334201
+14/12/2022 17:29:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:29:09.4437775 +0500 +05 m=+2580.697064701
+14/12/2022 17:29:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:29:39.4358352 +0500 +05 m=+2610.689122401
+14/12/2022 17:30:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:30:09.4367323 +0500 +05 m=+2640.690019501
+14/12/2022 17:30:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:30:39.4432723 +0500 +05 m=+2670.696559501
+14/12/2022 17:31:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:31:09.4359386 +0500 +05 m=+2700.689225801
+14/12/2022 17:31:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:31:39.4378327 +0500 +05 m=+2730.691119901
+14/12/2022 17:32:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:32:09.4438223 +0500 +05 m=+2760.697109501
+14/12/2022 17:32:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:32:39.4383658 +0500 +05 m=+2790.691653001
+14/12/2022 17:33:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:33:09.4434091 +0500 +05 m=+2820.696696301
+14/12/2022 17:33:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:33:39.4400822 +0500 +05 m=+2850.693369401
+14/12/2022 17:34:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:34:09.4442584 +0500 +05 m=+2880.697545601
+14/12/2022 17:34:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:34:39.4400028 +0500 +05 m=+2910.693290001
+14/12/2022 17:35:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:35:09.4375522 +0500 +05 m=+2940.690839401
+14/12/2022 17:35:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:35:39.4406916 +0500 +05 m=+2970.693978801
+14/12/2022 17:36:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:36:09.440818 +0500 +05 m=+3000.694105201
+14/12/2022 17:36:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:36:39.4476364 +0500 +05 m=+3030.700923601
+14/12/2022 17:37:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:37:09.4423771 +0500 +05 m=+3060.695664301
+14/12/2022 17:37:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:37:39.4428643 +0500 +05 m=+3090.696151501
+14/12/2022 17:38:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:38:09.4453579 +0500 +05 m=+3120.698645101
+14/12/2022 17:38:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:38:39.4482336 +0500 +05 m=+3150.701520801
+14/12/2022 17:39:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:39:09.4429265 +0500 +05 m=+3180.696213701
+14/12/2022 17:39:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:39:39.4465529 +0500 +05 m=+3210.699840101
+14/12/2022 17:40:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:40:09.4493262 +0500 +05 m=+3240.702613401
+14/12/2022 17:40:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:40:39.4430885 +0500 +05 m=+3270.696375701
+14/12/2022 17:41:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:41:09.4395597 +0500 +05 m=+3300.692846901
+14/12/2022 17:41:39 | expiredJobsCron() - getting expired jobs 2022-12-14 17:41:39.4404153 +0500 +05 m=+3330.693702501
+14/12/2022 17:42:09 | expiredJobsCron() - getting expired jobs 2022-12-14 17:42:09.4350204 +0500 +05 m=+3360.688307601
+14/12/2022 17:42:27 | AddListener() - `discount_removed` listener added
+14/12/2022 17:42:27 | AddListener() - `add_discount` listener added
+14/12/2022 17:42:27 | AddListener() - `auction_finished` listener added
+14/12/2022 17:42:27 | AddListener() - `auction_removed` listener added
+14/12/2022 17:42:27 | AddListener() - `permission_started` listener added
+14/12/2022 17:42:27 | AddListener() - `permission_ended` listener added
+14/12/2022 17:42:27 | channelCron() - Started at: 2022-12-14 17:42:27.6993443 +0500 +05 m=+0.676520501
+14/12/2022 17:42:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:42:57.7114471 +0500 +05 m=+30.688623301
+14/12/2022 17:43:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:43:27.7116995 +0500 +05 m=+60.688875701
+14/12/2022 17:43:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:43:57.7058781 +0500 +05 m=+90.683054301
+14/12/2022 17:44:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:44:27.7007825 +0500 +05 m=+120.677958701
+14/12/2022 17:44:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:44:57.7003768 +0500 +05 m=+150.677553001
+14/12/2022 17:45:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:45:27.7065844 +0500 +05 m=+180.683760601
+14/12/2022 17:45:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:45:57.7067305 +0500 +05 m=+210.683906701
+14/12/2022 17:46:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:46:27.717369 +0500 +05 m=+240.694545201
+14/12/2022 17:46:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:46:57.7015918 +0500 +05 m=+270.678768001
+14/12/2022 17:47:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:47:27.712888 +0500 +05 m=+300.690064201
+14/12/2022 17:47:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:47:57.7126172 +0500 +05 m=+330.689793401
+14/12/2022 17:48:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:48:27.7037558 +0500 +05 m=+360.680932001
+14/12/2022 17:48:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:48:57.707962 +0500 +05 m=+390.685138201
+14/12/2022 17:49:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:49:27.7046098 +0500 +05 m=+420.681786001
+14/12/2022 17:49:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:49:57.6997228 +0500 +05 m=+450.676899001
+14/12/2022 17:50:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:50:27.7115535 +0500 +05 m=+480.688729701
+14/12/2022 17:50:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:50:57.7110151 +0500 +05 m=+510.688191301
+14/12/2022 17:51:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:51:27.7051008 +0500 +05 m=+540.682277001
+14/12/2022 17:51:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:51:57.7121914 +0500 +05 m=+570.689367601
+14/12/2022 17:52:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:52:27.7009914 +0500 +05 m=+600.678167601
+14/12/2022 17:52:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:52:57.7046134 +0500 +05 m=+630.681789601
+14/12/2022 17:53:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:53:27.7032347 +0500 +05 m=+660.680410901
+14/12/2022 17:53:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:53:57.7080717 +0500 +05 m=+690.685247901
+14/12/2022 17:54:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:54:27.7036188 +0500 +05 m=+720.680795001
+14/12/2022 17:54:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:54:57.7112262 +0500 +05 m=+750.688402401
+14/12/2022 17:55:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:55:27.713532 +0500 +05 m=+780.690708201
+14/12/2022 17:55:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:55:57.7039772 +0500 +05 m=+810.681153401
+14/12/2022 17:56:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:56:27.7126303 +0500 +05 m=+840.689806501
+14/12/2022 17:56:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:56:57.701201 +0500 +05 m=+870.678377201
+14/12/2022 17:57:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:57:27.7110626 +0500 +05 m=+900.688238801
+14/12/2022 17:57:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:57:57.7032197 +0500 +05 m=+930.680395901
+14/12/2022 17:58:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:58:27.7130089 +0500 +05 m=+960.690185101
+14/12/2022 17:58:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:58:57.7038685 +0500 +05 m=+990.681044701
+14/12/2022 17:59:27 | expiredJobsCron() - getting expired jobs 2022-12-14 17:59:27.710628 +0500 +05 m=+1020.687804201
+14/12/2022 17:59:57 | expiredJobsCron() - getting expired jobs 2022-12-14 17:59:57.7056485 +0500 +05 m=+1050.682824701
+14/12/2022 18:00:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:00:27.7111995 +0500 +05 m=+1080.688375701
+14/12/2022 18:00:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:00:57.7123818 +0500 +05 m=+1110.689558001
+14/12/2022 18:01:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:01:27.7062049 +0500 +05 m=+1140.683381101
+14/12/2022 18:01:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:01:57.7030523 +0500 +05 m=+1170.680228501
+14/12/2022 18:02:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:02:27.7074914 +0500 +05 m=+1200.684667601
+14/12/2022 18:02:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:02:57.7030533 +0500 +05 m=+1230.680229501
+14/12/2022 18:03:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:03:27.7123895 +0500 +05 m=+1260.689565701
+14/12/2022 18:03:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:03:57.6997208 +0500 +05 m=+1290.676897001
+14/12/2022 18:04:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:04:27.6996804 +0500 +05 m=+1320.676856601
+14/12/2022 18:04:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:04:57.7130981 +0500 +05 m=+1350.690274301
+14/12/2022 18:05:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:05:27.7128003 +0500 +05 m=+1380.689976501
+14/12/2022 18:05:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:05:57.7075248 +0500 +05 m=+1410.684701001
+14/12/2022 18:06:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:06:27.7139528 +0500 +05 m=+1440.691129001
+14/12/2022 18:06:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:06:57.7071109 +0500 +05 m=+1470.684287101
+14/12/2022 18:07:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:07:27.7148964 +0500 +05 m=+1500.692072601
+14/12/2022 18:07:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:07:57.7137892 +0500 +05 m=+1530.690965401
+14/12/2022 18:08:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:08:27.7061402 +0500 +05 m=+1560.683316401
+14/12/2022 18:08:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:08:57.7142647 +0500 +05 m=+1590.691440901
+14/12/2022 18:09:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:09:27.713796 +0500 +05 m=+1620.690972201
+14/12/2022 18:09:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:09:57.7048 +0500 +05 m=+1650.681976201
+14/12/2022 18:10:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:10:27.7133086 +0500 +05 m=+1680.690484801
+14/12/2022 18:10:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:10:57.703684 +0500 +05 m=+1710.680860201
+14/12/2022 18:11:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:11:27.7017651 +0500 +05 m=+1740.678941301
+14/12/2022 18:11:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:11:57.7014192 +0500 +05 m=+1770.678595401
+14/12/2022 18:12:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:12:27.7074186 +0500 +05 m=+1800.684594801
+14/12/2022 18:12:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:12:57.7115144 +0500 +05 m=+1830.688690601
+14/12/2022 18:13:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:13:27.7138324 +0500 +05 m=+1860.691008601
+14/12/2022 18:13:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:13:57.7121646 +0500 +05 m=+1890.689340801
+14/12/2022 18:14:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:14:27.707864 +0500 +05 m=+1920.685040201
+14/12/2022 18:14:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:14:57.7048861 +0500 +05 m=+1950.682062301
+14/12/2022 18:15:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:15:27.7115533 +0500 +05 m=+1980.688729501
+14/12/2022 18:15:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:15:57.7056201 +0500 +05 m=+2010.682796301
+14/12/2022 18:16:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:16:27.7110142 +0500 +05 m=+2040.688190401
+14/12/2022 18:16:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:16:57.7037515 +0500 +05 m=+2070.680927701
+14/12/2022 18:17:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:17:27.7000676 +0500 +05 m=+2100.677243801
+14/12/2022 18:17:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:17:57.7065216 +0500 +05 m=+2130.683697801
+14/12/2022 18:18:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:18:27.7049379 +0500 +05 m=+2160.682114101
+14/12/2022 18:18:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:18:57.7029927 +0500 +05 m=+2190.680168901
+14/12/2022 18:19:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:19:27.7137238 +0500 +05 m=+2220.690900001
+14/12/2022 18:19:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:19:57.7083332 +0500 +05 m=+2250.685509401
+14/12/2022 18:20:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:20:27.703572 +0500 +05 m=+2280.680748201
+14/12/2022 18:20:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:20:57.7042847 +0500 +05 m=+2310.681460901
+14/12/2022 18:21:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:21:27.7139407 +0500 +05 m=+2340.691116901
+14/12/2022 18:21:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:21:57.7003367 +0500 +05 m=+2370.677512901
+14/12/2022 18:22:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:22:27.7152501 +0500 +05 m=+2400.692426301
+14/12/2022 18:22:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:22:57.7089311 +0500 +05 m=+2430.686107301
+14/12/2022 18:23:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:23:27.7110132 +0500 +05 m=+2460.688189401
+14/12/2022 18:23:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:23:57.7126473 +0500 +05 m=+2490.689823501
+14/12/2022 18:24:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:24:27.7048536 +0500 +05 m=+2520.682029801
+14/12/2022 18:24:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:24:57.7112512 +0500 +05 m=+2550.688427401
+14/12/2022 18:25:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:25:27.7003881 +0500 +05 m=+2580.677564301
+14/12/2022 18:25:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:25:57.7065399 +0500 +05 m=+2610.683716101
+14/12/2022 18:26:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:26:27.7115981 +0500 +05 m=+2640.688774301
+14/12/2022 18:26:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:26:57.7016475 +0500 +05 m=+2670.678823701
+14/12/2022 18:27:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:27:27.7038503 +0500 +05 m=+2700.681026501
+14/12/2022 18:27:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:27:57.7029114 +0500 +05 m=+2730.680087601
+14/12/2022 18:28:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:28:27.7078093 +0500 +05 m=+2760.684985501
+14/12/2022 18:28:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:28:57.707452 +0500 +05 m=+2790.684628201
+14/12/2022 18:29:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:29:27.7122713 +0500 +05 m=+2820.689447501
+14/12/2022 18:29:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:29:57.7087267 +0500 +05 m=+2850.685902901
+14/12/2022 18:30:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:30:27.7147234 +0500 +05 m=+2880.691899601
+14/12/2022 18:30:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:30:57.7063471 +0500 +05 m=+2910.683523301
+14/12/2022 18:31:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:31:27.7117849 +0500 +05 m=+2940.688961101
+14/12/2022 18:31:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:31:57.7119402 +0500 +05 m=+2970.689116401
+14/12/2022 18:32:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:32:27.7120099 +0500 +05 m=+3000.689186101
+14/12/2022 18:32:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:32:57.7050696 +0500 +05 m=+3030.682245801
+14/12/2022 18:33:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:33:27.7020322 +0500 +05 m=+3060.679208401
+14/12/2022 18:33:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:33:57.7008688 +0500 +05 m=+3090.678045001
+14/12/2022 18:34:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:34:27.7009725 +0500 +05 m=+3120.678148701
+14/12/2022 18:34:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:34:57.7098144 +0500 +05 m=+3150.686990601
+14/12/2022 18:35:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:35:27.7043477 +0500 +05 m=+3180.681523901
+14/12/2022 18:35:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:35:57.7102197 +0500 +05 m=+3210.687395901
+14/12/2022 18:36:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:36:27.7081975 +0500 +05 m=+3240.685373701
+14/12/2022 18:36:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:36:57.7119808 +0500 +05 m=+3270.689157001
+14/12/2022 18:37:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:37:27.7149074 +0500 +05 m=+3300.692083601
+14/12/2022 18:37:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:37:57.7043468 +0500 +05 m=+3330.681523001
+14/12/2022 18:38:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:38:27.7019672 +0500 +05 m=+3360.679143401
+14/12/2022 18:38:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:38:57.7107463 +0500 +05 m=+3390.687922501
+14/12/2022 18:39:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:39:27.7113759 +0500 +05 m=+3420.688552101
+14/12/2022 18:39:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:39:57.7015607 +0500 +05 m=+3450.678736901
+14/12/2022 18:40:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:40:27.7124266 +0500 +05 m=+3480.689602801
+14/12/2022 18:40:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:40:57.714162 +0500 +05 m=+3510.691338201
+14/12/2022 18:41:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:41:27.7097788 +0500 +05 m=+3540.686955001
+14/12/2022 18:41:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:41:57.7129465 +0500 +05 m=+3570.690122701
+14/12/2022 18:42:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:42:27.7050465 +0500 +05 m=+3600.682222701
+14/12/2022 18:42:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:42:57.7105875 +0500 +05 m=+3630.687763701
+14/12/2022 18:43:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:43:27.7050253 +0500 +05 m=+3660.682201501
+14/12/2022 18:43:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:43:57.7022015 +0500 +05 m=+3690.679377701
+14/12/2022 18:44:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:44:27.7006842 +0500 +05 m=+3720.677860401
+14/12/2022 18:44:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:44:57.70971 +0500 +05 m=+3750.686886201
+14/12/2022 18:45:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:45:27.7129292 +0500 +05 m=+3780.690105401
+14/12/2022 18:45:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:45:57.7068516 +0500 +05 m=+3810.684027801
+14/12/2022 18:46:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:46:27.7094935 +0500 +05 m=+3840.686669701
+14/12/2022 18:46:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:46:57.7127597 +0500 +05 m=+3870.689935901
+14/12/2022 18:47:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:47:27.7073758 +0500 +05 m=+3900.684552001
+14/12/2022 18:47:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:47:57.7058547 +0500 +05 m=+3930.683030901
+14/12/2022 18:48:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:48:27.7104024 +0500 +05 m=+3960.687578601
+14/12/2022 18:48:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:48:57.7113815 +0500 +05 m=+3990.688557701
+14/12/2022 18:49:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:49:27.7071195 +0500 +05 m=+4020.684295701
+14/12/2022 18:49:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:49:57.7090319 +0500 +05 m=+4050.686208101
+14/12/2022 18:50:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:50:27.7134714 +0500 +05 m=+4080.690647601
+14/12/2022 18:50:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:50:57.7035157 +0500 +05 m=+4110.680691901
+14/12/2022 18:51:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:51:27.7072966 +0500 +05 m=+4140.684472801
+14/12/2022 18:51:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:51:57.7102091 +0500 +05 m=+4170.687385301
+14/12/2022 18:52:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:52:27.7070641 +0500 +05 m=+4200.684240301
+14/12/2022 18:52:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:52:57.711638 +0500 +05 m=+4230.688814201
+14/12/2022 18:53:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:53:27.7036017 +0500 +05 m=+4260.680777901
+14/12/2022 18:53:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:53:57.7037874 +0500 +05 m=+4290.680963601
+14/12/2022 18:54:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:54:27.7013281 +0500 +05 m=+4320.678504301
+14/12/2022 18:54:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:54:57.6999 +0500 +05 m=+4350.677076201
+14/12/2022 18:55:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:55:27.7008658 +0500 +05 m=+4380.678042001
+14/12/2022 18:55:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:55:57.7054958 +0500 +05 m=+4410.682672001
+14/12/2022 18:56:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:56:27.7000297 +0500 +05 m=+4440.677205901
+14/12/2022 18:56:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:56:57.7072005 +0500 +05 m=+4470.684376701
+14/12/2022 18:57:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:57:27.7009222 +0500 +05 m=+4500.678098401
+14/12/2022 18:57:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:57:57.7114285 +0500 +05 m=+4530.688604701
+14/12/2022 18:58:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:58:27.7068142 +0500 +05 m=+4560.683990401
+14/12/2022 18:58:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:58:57.7131562 +0500 +05 m=+4590.690332401
+14/12/2022 18:59:27 | expiredJobsCron() - getting expired jobs 2022-12-14 18:59:27.7154936 +0500 +05 m=+4620.692669801
+14/12/2022 18:59:57 | expiredJobsCron() - getting expired jobs 2022-12-14 18:59:57.6999422 +0500 +05 m=+4650.677118401
+14/12/2022 19:00:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:00:27.7083626 +0500 +05 m=+4680.685538801
+14/12/2022 19:00:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:00:57.7044298 +0500 +05 m=+4710.681606001
+14/12/2022 19:01:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:01:27.7120128 +0500 +05 m=+4740.689189001
+14/12/2022 19:01:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:01:57.7111737 +0500 +05 m=+4770.688349901
+14/12/2022 19:02:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:02:27.7053459 +0500 +05 m=+4800.682522101
+14/12/2022 19:02:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:02:57.7035176 +0500 +05 m=+4830.680693801
+14/12/2022 19:03:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:03:27.7075227 +0500 +05 m=+4860.684698901
+14/12/2022 19:03:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:03:57.7021554 +0500 +05 m=+4890.679331601
+14/12/2022 19:04:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:04:27.7121034 +0500 +05 m=+4920.689279601
+14/12/2022 19:04:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:04:57.7105427 +0500 +05 m=+4950.687718901
+14/12/2022 19:05:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:05:27.7105627 +0500 +05 m=+4980.687738901
+14/12/2022 19:05:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:05:57.7110945 +0500 +05 m=+5010.688270701
+14/12/2022 19:06:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:06:27.7076709 +0500 +05 m=+5040.684847101
+14/12/2022 19:06:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:06:57.7032542 +0500 +05 m=+5070.680430401
+14/12/2022 19:07:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:07:27.701594 +0500 +05 m=+5100.678770201
+14/12/2022 19:07:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:07:57.7068192 +0500 +05 m=+5130.683995401
+14/12/2022 19:08:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:08:27.7067969 +0500 +05 m=+5160.683973101
+14/12/2022 19:08:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:08:57.7003873 +0500 +05 m=+5190.677563501
+14/12/2022 19:09:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:09:27.7096746 +0500 +05 m=+5220.686850801
+14/12/2022 19:09:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:09:57.7124466 +0500 +05 m=+5250.689622801
+14/12/2022 19:10:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:10:27.7103396 +0500 +05 m=+5280.687515801
+14/12/2022 19:10:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:10:57.6998556 +0500 +05 m=+5310.677031801
+14/12/2022 19:11:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:11:27.7128151 +0500 +05 m=+5340.689991301
+14/12/2022 19:11:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:11:57.7124565 +0500 +05 m=+5370.689632701
+14/12/2022 19:12:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:12:27.7030552 +0500 +05 m=+5400.680231401
+14/12/2022 19:12:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:12:57.7032918 +0500 +05 m=+5430.680468001
+14/12/2022 19:13:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:13:27.7014079 +0500 +05 m=+5460.678584101
+14/12/2022 19:13:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:13:57.7036184 +0500 +05 m=+5490.680794601
+14/12/2022 19:14:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:14:27.7191579 +0500 +05 m=+5520.696334101
+14/12/2022 19:14:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:14:57.7109066 +0500 +05 m=+5550.688082801
+14/12/2022 19:15:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:15:27.7012042 +0500 +05 m=+5580.678380401
+14/12/2022 19:15:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:15:57.7109741 +0500 +05 m=+5610.688150301
+14/12/2022 19:16:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:16:27.7049986 +0500 +05 m=+5640.682174801
+14/12/2022 19:16:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:16:57.7143035 +0500 +05 m=+5670.691479701
+14/12/2022 19:17:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:17:27.7069083 +0500 +05 m=+5700.684084501
+14/12/2022 19:17:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:17:57.7054475 +0500 +05 m=+5730.682623701
+14/12/2022 19:18:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:18:27.7047053 +0500 +05 m=+5760.681881501
+14/12/2022 19:18:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:18:57.7074674 +0500 +05 m=+5790.684643601
+14/12/2022 19:19:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:19:27.7077507 +0500 +05 m=+5820.684926901
+14/12/2022 19:19:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:19:57.7013816 +0500 +05 m=+5850.678557801
+14/12/2022 19:20:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:20:27.7122458 +0500 +05 m=+5880.689422001
+14/12/2022 19:20:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:20:57.7134873 +0500 +05 m=+5910.690663501
+14/12/2022 19:21:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:21:27.7115151 +0500 +05 m=+5940.688691301
+14/12/2022 19:21:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:21:57.7105531 +0500 +05 m=+5970.687729301
+14/12/2022 19:22:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:22:27.705975 +0500 +05 m=+6000.683151201
+14/12/2022 19:22:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:22:57.7035957 +0500 +05 m=+6030.680771901
+14/12/2022 19:23:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:23:27.7103874 +0500 +05 m=+6060.687563601
+14/12/2022 19:23:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:23:57.699494 +0500 +05 m=+6090.676670201
+14/12/2022 19:24:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:24:27.7003075 +0500 +05 m=+6120.677483701
+14/12/2022 19:24:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:24:57.7138395 +0500 +05 m=+6150.691015701
+14/12/2022 19:25:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:25:27.7111781 +0500 +05 m=+6180.688354301
+14/12/2022 19:25:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:25:57.7007698 +0500 +05 m=+6210.677946001
+14/12/2022 19:26:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:26:27.7070494 +0500 +05 m=+6240.684225601
+14/12/2022 19:26:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:26:57.6995023 +0500 +05 m=+6270.676678501
+14/12/2022 19:27:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:27:27.7151932 +0500 +05 m=+6300.692369401
+14/12/2022 19:27:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:27:57.7037842 +0500 +05 m=+6330.680960401
+14/12/2022 19:28:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:28:27.710491 +0500 +05 m=+6360.687667201
+14/12/2022 19:28:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:28:57.7110358 +0500 +05 m=+6390.688212001
+14/12/2022 19:29:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:29:27.7043892 +0500 +05 m=+6420.681565401
+14/12/2022 19:29:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:29:57.7057434 +0500 +05 m=+6450.682919601
+14/12/2022 19:30:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:30:27.7134353 +0500 +05 m=+6480.690611501
+14/12/2022 19:30:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:30:57.706447 +0500 +05 m=+6510.683623201
+14/12/2022 19:31:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:31:27.714009 +0500 +05 m=+6540.691185201
+14/12/2022 19:31:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:31:57.7016288 +0500 +05 m=+6570.678805001
+14/12/2022 19:32:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:32:27.6995622 +0500 +05 m=+6600.676738401
+14/12/2022 19:32:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:32:57.7086907 +0500 +05 m=+6630.685866901
+14/12/2022 19:33:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:33:27.7010159 +0500 +05 m=+6660.678192101
+14/12/2022 19:33:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:33:57.7088772 +0500 +05 m=+6690.686053401
+14/12/2022 19:34:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:34:27.7096543 +0500 +05 m=+6720.686830501
+14/12/2022 19:34:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:34:57.7042873 +0500 +05 m=+6750.681463501
+14/12/2022 19:35:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:35:27.7141632 +0500 +05 m=+6780.691339401
+14/12/2022 19:35:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:35:57.7096197 +0500 +05 m=+6810.686795901
+14/12/2022 19:36:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:36:27.7148504 +0500 +05 m=+6840.692026601
+14/12/2022 19:36:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:36:57.702232 +0500 +05 m=+6870.679408201
+14/12/2022 19:37:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:37:27.7045758 +0500 +05 m=+6900.681752001
+14/12/2022 19:37:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:37:57.7049583 +0500 +05 m=+6930.682134501
+14/12/2022 19:38:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:38:27.7076591 +0500 +05 m=+6960.684835301
+14/12/2022 19:38:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:38:57.7017802 +0500 +05 m=+6990.678956401
+14/12/2022 19:39:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:39:27.7138331 +0500 +05 m=+7020.691009301
+14/12/2022 19:39:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:39:57.7052711 +0500 +05 m=+7050.682447301
+14/12/2022 19:40:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:40:27.7039821 +0500 +05 m=+7080.681158301
+14/12/2022 19:40:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:40:57.7118007 +0500 +05 m=+7110.688976901
+14/12/2022 19:41:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:41:27.6997554 +0500 +05 m=+7140.676931601
+14/12/2022 19:41:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:41:57.7076836 +0500 +05 m=+7170.684859801
+14/12/2022 19:42:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:42:27.709081 +0500 +05 m=+7200.686257201
+14/12/2022 19:42:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:42:57.7064875 +0500 +05 m=+7230.683663701
+14/12/2022 19:43:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:43:27.7028277 +0500 +05 m=+7260.680003901
+14/12/2022 19:43:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:43:57.7040185 +0500 +05 m=+7290.681194701
+14/12/2022 19:44:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:44:27.7048058 +0500 +05 m=+7320.681982001
+14/12/2022 19:44:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:44:57.7135061 +0500 +05 m=+7350.690682301
+14/12/2022 19:45:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:45:27.7053323 +0500 +05 m=+7380.682508501
+14/12/2022 19:45:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:45:57.7026737 +0500 +05 m=+7410.679849901
+14/12/2022 19:46:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:46:27.7002978 +0500 +05 m=+7440.677474001
+14/12/2022 19:46:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:46:57.7141515 +0500 +05 m=+7470.691327701
+14/12/2022 19:47:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:47:27.7102461 +0500 +05 m=+7500.687422301
+14/12/2022 19:47:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:47:57.7057765 +0500 +05 m=+7530.682952701
+14/12/2022 19:48:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:48:27.7048612 +0500 +05 m=+7560.682037401
+14/12/2022 19:48:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:48:57.7143668 +0500 +05 m=+7590.691543001
+14/12/2022 19:49:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:49:27.7110249 +0500 +05 m=+7620.688201101
+14/12/2022 19:49:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:49:57.7115512 +0500 +05 m=+7650.688727401
+14/12/2022 19:50:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:50:27.7101182 +0500 +05 m=+7680.687294401
+14/12/2022 19:50:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:50:57.7109448 +0500 +05 m=+7710.688121001
+14/12/2022 19:51:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:51:27.7109113 +0500 +05 m=+7740.688087501
+14/12/2022 19:51:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:51:57.7064008 +0500 +05 m=+7770.683577001
+14/12/2022 19:52:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:52:27.7007398 +0500 +05 m=+7800.677916001
+14/12/2022 19:52:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:52:57.7102044 +0500 +05 m=+7830.687380601
+14/12/2022 19:53:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:53:27.7084826 +0500 +05 m=+7860.685658801
+14/12/2022 19:53:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:53:57.7061157 +0500 +05 m=+7890.683291901
+14/12/2022 19:54:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:54:27.7104188 +0500 +05 m=+7920.687595001
+14/12/2022 19:54:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:54:57.6994282 +0500 +05 m=+7950.676604401
+14/12/2022 19:55:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:55:27.7101057 +0500 +05 m=+7980.687281901
+14/12/2022 19:55:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:55:57.7128233 +0500 +05 m=+8010.689999501
+14/12/2022 19:56:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:56:27.7123998 +0500 +05 m=+8040.689576001
+14/12/2022 19:56:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:56:57.7093361 +0500 +05 m=+8070.686512301
+14/12/2022 19:57:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:57:27.7106225 +0500 +05 m=+8100.687798701
+14/12/2022 19:57:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:57:57.701104 +0500 +05 m=+8130.678280201
+14/12/2022 19:58:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:58:27.7068929 +0500 +05 m=+8160.684069101
+14/12/2022 19:58:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:58:57.7144352 +0500 +05 m=+8190.691611401
+14/12/2022 19:59:27 | expiredJobsCron() - getting expired jobs 2022-12-14 19:59:27.7069907 +0500 +05 m=+8220.684166901
+14/12/2022 19:59:57 | expiredJobsCron() - getting expired jobs 2022-12-14 19:59:57.7037956 +0500 +05 m=+8250.680971801
+14/12/2022 20:00:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:00:27.7130967 +0500 +05 m=+8280.690272901
+14/12/2022 20:00:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:00:57.7044584 +0500 +05 m=+8310.681634601
+14/12/2022 20:01:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:01:27.7036268 +0500 +05 m=+8340.680803001
+14/12/2022 20:01:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:01:57.7046209 +0500 +05 m=+8370.681797101
+14/12/2022 20:02:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:02:27.7141059 +0500 +05 m=+8400.691282101
+14/12/2022 20:02:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:02:57.7035251 +0500 +05 m=+8430.680701301
+14/12/2022 20:03:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:03:27.7066333 +0500 +05 m=+8460.683809501
+14/12/2022 20:03:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:03:57.7013242 +0500 +05 m=+8490.678500401
+14/12/2022 20:04:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:04:27.7023178 +0500 +05 m=+8520.679494001
+14/12/2022 20:04:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:04:57.6998333 +0500 +05 m=+8550.677009501
+14/12/2022 20:05:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:05:27.7004369 +0500 +05 m=+8580.677613101
+14/12/2022 20:05:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:05:57.7098433 +0500 +05 m=+8610.687019501
+14/12/2022 20:06:27 | expiredJobsCron() - getting expired jobs 2022-12-14 20:06:27.7141982 +0500 +05 m=+8640.691374401
+14/12/2022 20:06:57 | expiredJobsCron() - getting expired jobs 2022-12-14 20:06:57.7110287 +0500 +05 m=+8670.688204901
+14/12/2022 20:10:44 | AddListener() - `discount_removed` listener added
+14/12/2022 20:10:44 | AddListener() - `add_discount` listener added
+14/12/2022 20:10:44 | AddListener() - `auction_finished` listener added
+14/12/2022 20:10:44 | AddListener() - `auction_removed` listener added
+14/12/2022 20:10:44 | AddListener() - `permission_started` listener added
+14/12/2022 20:10:44 | AddListener() - `permission_ended` listener added
+14/12/2022 20:10:44 | channelCron() - Started at: 2022-12-14 20:10:44.3922545 +0500 +05 m=+0.698218501
+14/12/2022 20:11:14 | expiredJobsCron() - getting expired jobs 2022-12-14 20:11:14.4039099 +0500 +05 m=+30.709873901
+14/12/2022 20:11:44 | expiredJobsCron() - getting expired jobs 2022-12-14 20:11:44.4055156 +0500 +05 m=+60.711479601
+14/12/2022 20:12:14 | expiredJobsCron() - getting expired jobs 2022-12-14 20:12:14.4057104 +0500 +05 m=+90.711674401
+14/12/2022 20:12:42 | AddListener() - `discount_removed` listener added
+14/12/2022 20:12:42 | AddListener() - `add_discount` listener added
+14/12/2022 20:12:42 | AddListener() - `auction_finished` listener added
+14/12/2022 20:12:42 | AddListener() - `auction_removed` listener added
+14/12/2022 20:12:42 | AddListener() - `permission_started` listener added
+14/12/2022 20:12:42 | AddListener() - `permission_ended` listener added
+14/12/2022 20:12:42 | channelCron() - Started at: 2022-12-14 20:12:42.8178557 +0500 +05 m=+0.668805101
+14/12/2022 20:13:12 | expiredJobsCron() - getting expired jobs 2022-12-14 20:13:12.8321331 +0500 +05 m=+30.683082501
+14/12/2022 20:13:42 | expiredJobsCron() - getting expired jobs 2022-12-14 20:13:42.8243665 +0500 +05 m=+60.675315901
+14/12/2022 20:14:12 | expiredJobsCron() - getting expired jobs 2022-12-14 20:14:12.8296435 +0500 +05 m=+90.680592901
+14/12/2022 20:14:42 | expiredJobsCron() - getting expired jobs 2022-12-14 20:14:42.8251847 +0500 +05 m=+120.676134101
+14/12/2022 20:15:12 | expiredJobsCron() - getting expired jobs 2022-12-14 20:15:12.828465 +0500 +05 m=+150.679414401
+14/12/2022 20:16:30 | AddListener() - `discount_removed` listener added
+14/12/2022 20:16:30 | AddListener() - `add_discount` listener added
+14/12/2022 20:16:30 | AddListener() - `auction_finished` listener added
+14/12/2022 20:16:30 | AddListener() - `auction_removed` listener added
+14/12/2022 20:16:30 | AddListener() - `permission_started` listener added
+14/12/2022 20:16:30 | AddListener() - `permission_ended` listener added
+14/12/2022 20:16:30 | channelCron() - Started at: 2022-12-14 20:16:30.5271465 +0500 +05 m=+0.700280701
+14/12/2022 20:17:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:17:00.5318406 +0500 +05 m=+30.704974801
+14/12/2022 20:17:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:17:30.5382413 +0500 +05 m=+60.711375501
+14/12/2022 20:18:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:18:00.5392735 +0500 +05 m=+90.712407701
+14/12/2022 20:18:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:18:30.528829 +0500 +05 m=+120.701963201
+14/12/2022 20:19:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:19:00.5410458 +0500 +05 m=+150.714180001
+14/12/2022 20:19:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:19:30.5387376 +0500 +05 m=+180.711871801
+14/12/2022 20:20:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:20:00.5383305 +0500 +05 m=+210.711464701
+14/12/2022 20:20:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:20:30.5365235 +0500 +05 m=+240.709657701
+14/12/2022 20:21:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:21:00.5372244 +0500 +05 m=+270.710358601
+14/12/2022 20:21:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:21:30.5379894 +0500 +05 m=+300.711123601
+14/12/2022 20:22:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:22:00.5339115 +0500 +05 m=+330.707045701
+14/12/2022 20:22:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:22:30.5329622 +0500 +05 m=+360.706096401
+14/12/2022 20:23:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:23:00.5431538 +0500 +05 m=+390.716288001
+14/12/2022 20:23:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:23:30.5316897 +0500 +05 m=+420.704823901
+14/12/2022 20:24:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:24:00.5286192 +0500 +05 m=+450.701753401
+14/12/2022 20:24:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:24:30.5281922 +0500 +05 m=+480.701326401
+14/12/2022 20:25:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:25:00.5311595 +0500 +05 m=+510.704293701
+14/12/2022 20:25:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:25:30.530943 +0500 +05 m=+540.704077201
+14/12/2022 20:26:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:26:00.5316308 +0500 +05 m=+570.704765001
+14/12/2022 20:26:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:26:30.53937 +0500 +05 m=+600.712504201
+14/12/2022 20:27:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:27:00.5374226 +0500 +05 m=+630.710556801
+14/12/2022 20:27:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:27:30.5328953 +0500 +05 m=+660.706029501
+14/12/2022 20:28:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:28:00.5339224 +0500 +05 m=+690.707056601
+14/12/2022 20:28:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:28:30.5358845 +0500 +05 m=+720.709018701
+14/12/2022 20:29:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:29:00.534542 +0500 +05 m=+750.707676201
+14/12/2022 20:29:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:29:30.5338878 +0500 +05 m=+780.707022001
+14/12/2022 20:30:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:30:00.5317113 +0500 +05 m=+810.704845501
+14/12/2022 20:30:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:30:30.5398409 +0500 +05 m=+840.712975101
+14/12/2022 20:31:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:31:00.5294034 +0500 +05 m=+870.702537601
+14/12/2022 20:31:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:31:30.5282605 +0500 +05 m=+900.701394701
+14/12/2022 20:32:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:32:00.5398857 +0500 +05 m=+930.713019901
+14/12/2022 20:32:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:32:30.5335103 +0500 +05 m=+960.706644501
+14/12/2022 20:33:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:33:00.5279593 +0500 +05 m=+990.701093501
+14/12/2022 20:33:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:33:30.5285655 +0500 +05 m=+1020.701699701
+14/12/2022 20:34:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:34:00.5396486 +0500 +05 m=+1050.712782801
+14/12/2022 20:34:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:34:30.529053 +0500 +05 m=+1080.702187201
+14/12/2022 20:35:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:35:00.5381333 +0500 +05 m=+1110.711267501
+14/12/2022 20:35:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:35:30.5296592 +0500 +05 m=+1140.702793401
+14/12/2022 20:36:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:36:00.5386511 +0500 +05 m=+1170.711785301
+14/12/2022 20:36:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:36:30.5397274 +0500 +05 m=+1200.712861601
+14/12/2022 20:37:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:37:00.5410906 +0500 +05 m=+1230.714224801
+14/12/2022 20:37:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:37:30.53128 +0500 +05 m=+1260.704414201
+14/12/2022 20:38:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:38:00.5307964 +0500 +05 m=+1290.703930601
+14/12/2022 20:38:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:38:30.5341146 +0500 +05 m=+1320.707248801
+14/12/2022 20:39:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:39:00.5418842 +0500 +05 m=+1350.715018401
+14/12/2022 20:39:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:39:30.5364874 +0500 +05 m=+1380.709621601
+14/12/2022 20:40:00 | expiredJobsCron() - getting expired jobs 2022-12-14 20:40:00.5377484 +0500 +05 m=+1410.710882601
+14/12/2022 20:40:30 | expiredJobsCron() - getting expired jobs 2022-12-14 20:40:30.5411127 +0500 +05 m=+1440.714246901
+14/12/2022 20:40:49 | AddListener() - `discount_removed` listener added
+14/12/2022 20:40:49 | AddListener() - `add_discount` listener added
+14/12/2022 20:40:49 | AddListener() - `auction_finished` listener added
+14/12/2022 20:40:49 | AddListener() - `auction_removed` listener added
+14/12/2022 20:40:49 | AddListener() - `permission_started` listener added
+14/12/2022 20:40:49 | AddListener() - `permission_ended` listener added
+14/12/2022 20:40:49 | channelCron() - Started at: 2022-12-14 20:40:49.4608081 +0500 +05 m=+0.683351401
+14/12/2022 20:41:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:41:19.4668234 +0500 +05 m=+30.689366701
+14/12/2022 20:41:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:41:49.4708548 +0500 +05 m=+60.693398101
+14/12/2022 20:42:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:42:19.4618197 +0500 +05 m=+90.684363001
+14/12/2022 20:42:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:42:49.4670095 +0500 +05 m=+120.689552801
+14/12/2022 20:43:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:43:19.4657748 +0500 +05 m=+150.688318101
+14/12/2022 20:43:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:43:49.4714422 +0500 +05 m=+180.693985501
+14/12/2022 20:44:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:44:19.473063 +0500 +05 m=+210.695606301
+14/12/2022 20:44:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:44:49.4666362 +0500 +05 m=+240.689179501
+14/12/2022 20:45:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:45:19.4756102 +0500 +05 m=+270.698153501
+14/12/2022 20:45:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:45:49.4631714 +0500 +05 m=+300.685714701
+14/12/2022 20:46:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:46:19.4611344 +0500 +05 m=+330.683677701
+14/12/2022 20:46:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:46:49.4736428 +0500 +05 m=+360.696186101
+14/12/2022 20:47:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:47:19.4641969 +0500 +05 m=+390.686740201
+14/12/2022 20:47:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:47:49.4665746 +0500 +05 m=+420.689117901
+14/12/2022 20:48:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:48:19.4624528 +0500 +05 m=+450.684996101
+14/12/2022 20:48:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:48:49.4621992 +0500 +05 m=+480.684742501
+14/12/2022 20:49:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:49:19.4711245 +0500 +05 m=+510.693667801
+14/12/2022 20:49:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:49:49.4612619 +0500 +05 m=+540.683805201
+14/12/2022 20:50:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:50:19.4750408 +0500 +05 m=+570.697584101
+14/12/2022 20:50:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:50:49.4626949 +0500 +05 m=+600.685238201
+14/12/2022 20:51:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:51:19.4664782 +0500 +05 m=+630.689021501
+14/12/2022 20:51:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:51:49.4691051 +0500 +05 m=+660.691648401
+14/12/2022 20:52:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:52:19.4711356 +0500 +05 m=+690.693678901
+14/12/2022 20:52:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:52:49.4653867 +0500 +05 m=+720.687930001
+14/12/2022 20:53:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:53:19.4673635 +0500 +05 m=+750.689906801
+14/12/2022 20:53:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:53:49.4707815 +0500 +05 m=+780.693324801
+14/12/2022 20:54:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:54:19.4728871 +0500 +05 m=+810.695430401
+14/12/2022 20:54:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:54:49.46381 +0500 +05 m=+840.686353301
+14/12/2022 20:55:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:55:19.4689999 +0500 +05 m=+870.691543201
+14/12/2022 20:55:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:55:49.4737974 +0500 +05 m=+900.696340701
+14/12/2022 20:56:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:56:19.4762324 +0500 +05 m=+930.698775701
+14/12/2022 20:56:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:56:49.465596 +0500 +05 m=+960.688139301
+14/12/2022 20:57:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:57:19.4661817 +0500 +05 m=+990.688725001
+14/12/2022 20:57:49 | expiredJobsCron() - getting expired jobs 2022-12-14 20:57:49.4673236 +0500 +05 m=+1020.689866901
+14/12/2022 20:58:19 | expiredJobsCron() - getting expired jobs 2022-12-14 20:58:19.4659378 +0500 +05 m=+1050.688481101
+14/12/2022 20:58:59 | AddListener() - `discount_removed` listener added
+14/12/2022 20:58:59 | AddListener() - `add_discount` listener added
+14/12/2022 20:58:59 | AddListener() - `auction_finished` listener added
+14/12/2022 20:58:59 | AddListener() - `auction_removed` listener added
+14/12/2022 20:58:59 | AddListener() - `permission_started` listener added
+14/12/2022 20:58:59 | AddListener() - `permission_ended` listener added
+14/12/2022 20:58:59 | channelCron() - Started at: 2022-12-14 20:58:59.9651648 +0500 +05 m=+0.700383501
+14/12/2022 20:59:29 | expiredJobsCron() - getting expired jobs 2022-12-14 20:59:29.9777554 +0500 +05 m=+30.712974101
+14/12/2022 20:59:59 | expiredJobsCron() - getting expired jobs 2022-12-14 20:59:59.9664742 +0500 +05 m=+60.701692901
+14/12/2022 21:00:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:00:29.9665885 +0500 +05 m=+90.701807201
+14/12/2022 21:00:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:00:59.9698445 +0500 +05 m=+120.705063201
+14/12/2022 21:01:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:01:29.9764787 +0500 +05 m=+150.711697401
+14/12/2022 21:01:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:01:59.9800296 +0500 +05 m=+180.715248301
+14/12/2022 21:02:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:02:29.9704296 +0500 +05 m=+210.705648301
+14/12/2022 21:02:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:02:59.9774619 +0500 +05 m=+240.712680601
+14/12/2022 21:03:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:03:29.9744386 +0500 +05 m=+270.709657301
+14/12/2022 21:03:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:03:59.9738552 +0500 +05 m=+300.709073901
+14/12/2022 21:04:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:04:29.96768 +0500 +05 m=+330.702898701
+14/12/2022 21:04:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:04:59.9756644 +0500 +05 m=+360.710883101
+14/12/2022 21:05:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:05:29.9711488 +0500 +05 m=+390.706367501
+14/12/2022 21:05:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:05:59.9794899 +0500 +05 m=+420.714708601
+14/12/2022 21:06:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:06:29.9739408 +0500 +05 m=+450.709159501
+14/12/2022 21:06:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:06:59.9797434 +0500 +05 m=+480.714962101
+14/12/2022 21:07:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:07:29.969024 +0500 +05 m=+510.704242701
+14/12/2022 21:07:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:07:59.9739964 +0500 +05 m=+540.709215101
+14/12/2022 21:08:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:08:29.9794191 +0500 +05 m=+570.714637801
+14/12/2022 21:08:59 | expiredJobsCron() - getting expired jobs 2022-12-14 21:08:59.979294 +0500 +05 m=+600.714512701
+14/12/2022 21:09:29 | expiredJobsCron() - getting expired jobs 2022-12-14 21:09:29.9661188 +0500 +05 m=+630.701337501
+14/12/2022 21:09:53 | AddListener() - `discount_removed` listener added
+14/12/2022 21:09:53 | AddListener() - `add_discount` listener added
+14/12/2022 21:09:53 | AddListener() - `auction_finished` listener added
+14/12/2022 21:09:53 | AddListener() - `auction_removed` listener added
+14/12/2022 21:09:53 | AddListener() - `permission_started` listener added
+14/12/2022 21:09:53 | AddListener() - `permission_ended` listener added
+14/12/2022 21:09:53 | channelCron() - Started at: 2022-12-14 21:09:53.9581449 +0500 +05 m=+0.698296801
+14/12/2022 21:10:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:10:23.9633972 +0500 +05 m=+30.703549101
+14/12/2022 21:10:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:10:53.9705813 +0500 +05 m=+60.710733201
+14/12/2022 21:11:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:11:23.9710643 +0500 +05 m=+90.711216201
+14/12/2022 21:11:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:11:53.9714823 +0500 +05 m=+120.711634201
+14/12/2022 21:12:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:12:23.9636576 +0500 +05 m=+150.703809501
+14/12/2022 21:12:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:12:53.9584156 +0500 +05 m=+180.698567501
+14/12/2022 21:13:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:13:23.9679237 +0500 +05 m=+210.708075601
+14/12/2022 21:13:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:13:53.9685879 +0500 +05 m=+240.708739801
+14/12/2022 21:14:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:14:23.9720416 +0500 +05 m=+270.712193501
+14/12/2022 21:14:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:14:53.964277 +0500 +05 m=+300.704428901
+14/12/2022 21:15:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:15:23.9610195 +0500 +05 m=+330.701171401
+14/12/2022 21:15:53 | expiredJobsCron() - getting expired jobs 2022-12-14 21:15:53.972102 +0500 +05 m=+360.712253901
+14/12/2022 21:16:23 | expiredJobsCron() - getting expired jobs 2022-12-14 21:16:23.9657279 +0500 +05 m=+390.705879801
+14/12/2022 21:16:56 | AddListener() - `discount_removed` listener added
+14/12/2022 21:16:56 | AddListener() - `add_discount` listener added
+14/12/2022 21:16:56 | AddListener() - `auction_finished` listener added
+14/12/2022 21:16:56 | AddListener() - `auction_removed` listener added
+14/12/2022 21:16:56 | AddListener() - `permission_started` listener added
+14/12/2022 21:16:56 | AddListener() - `permission_ended` listener added
+14/12/2022 21:16:56 | channelCron() - Started at: 2022-12-14 21:16:56.9307753 +0500 +05 m=+0.687825101
+14/12/2022 21:17:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:17:26.9370869 +0500 +05 m=+30.694136701
+14/12/2022 21:17:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:17:56.9432175 +0500 +05 m=+60.700267301
+14/12/2022 21:18:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:18:26.9402548 +0500 +05 m=+90.697304601
+14/12/2022 21:18:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:18:56.939048 +0500 +05 m=+120.696097801
+14/12/2022 21:19:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:19:26.9405711 +0500 +05 m=+150.697620901
+14/12/2022 21:19:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:19:56.9363296 +0500 +05 m=+180.693379401
+14/12/2022 21:20:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:20:26.9313122 +0500 +05 m=+210.688362001
+14/12/2022 21:20:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:20:56.9359841 +0500 +05 m=+240.693033901
+14/12/2022 21:21:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:21:26.935673 +0500 +05 m=+270.692722801
+14/12/2022 21:21:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:21:56.9329281 +0500 +05 m=+300.689977901
+14/12/2022 21:22:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:22:26.9323076 +0500 +05 m=+330.689357401
+14/12/2022 21:22:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:22:56.9450372 +0500 +05 m=+360.702087001
+14/12/2022 21:23:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:23:26.9340167 +0500 +05 m=+390.691066501
+14/12/2022 21:23:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:23:56.936856 +0500 +05 m=+420.693905801
+14/12/2022 21:24:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:24:26.9436018 +0500 +05 m=+450.700651601
+14/12/2022 21:24:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:24:56.932547 +0500 +05 m=+480.689596801
+14/12/2022 21:25:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:25:26.9410103 +0500 +05 m=+510.698060101
+14/12/2022 21:25:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:25:56.9400821 +0500 +05 m=+540.697131901
+14/12/2022 21:26:26 | AddListener() - `discount_removed` listener added
+14/12/2022 21:26:26 | AddListener() - `add_discount` listener added
+14/12/2022 21:26:26 | AddListener() - `auction_finished` listener added
+14/12/2022 21:26:26 | AddListener() - `auction_removed` listener added
+14/12/2022 21:26:26 | channelCron() - Started at: 2022-12-14 21:26:26.5724174 +0500 +05 m=+0.690081301
+14/12/2022 21:26:26 | AddListener() - `permission_started` listener added
+14/12/2022 21:26:26 | AddListener() - `permission_ended` listener added
+14/12/2022 21:26:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:26:56.5757149 +0500 +05 m=+30.693378801
+14/12/2022 21:27:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:27:26.5876948 +0500 +05 m=+60.705358701
+14/12/2022 21:27:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:27:56.5884727 +0500 +05 m=+90.706136601
+14/12/2022 21:28:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:28:26.5735254 +0500 +05 m=+120.691189301
+14/12/2022 21:28:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:28:56.5735003 +0500 +05 m=+150.691164201
+14/12/2022 21:29:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:29:26.5812176 +0500 +05 m=+180.698881501
+14/12/2022 21:29:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:29:56.5868475 +0500 +05 m=+210.704511401
+14/12/2022 21:30:39 | AddListener() - `discount_removed` listener added
+14/12/2022 21:30:39 | AddListener() - `add_discount` listener added
+14/12/2022 21:30:39 | AddListener() - `auction_finished` listener added
+14/12/2022 21:30:39 | AddListener() - `auction_removed` listener added
+14/12/2022 21:30:39 | AddListener() - `permission_started` listener added
+14/12/2022 21:30:39 | AddListener() - `permission_ended` listener added
+14/12/2022 21:30:39 | channelCron() - Started at: 2022-12-14 21:30:39.6773534 +0500 +05 m=+0.681279501
+14/12/2022 21:31:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:31:09.6805847 +0500 +05 m=+30.684510801
+14/12/2022 21:31:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:31:39.6900356 +0500 +05 m=+60.693961701
+14/12/2022 21:32:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:32:09.6869072 +0500 +05 m=+90.690833301
+14/12/2022 21:32:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:32:39.6884116 +0500 +05 m=+120.692337701
+14/12/2022 21:33:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:33:09.6902966 +0500 +05 m=+150.694222701
+14/12/2022 21:33:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:33:39.681697 +0500 +05 m=+180.685623101
+14/12/2022 21:34:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:34:09.688445 +0500 +05 m=+210.692371101
+14/12/2022 21:34:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:34:39.6914325 +0500 +05 m=+240.695358601
+14/12/2022 21:35:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:35:09.6834632 +0500 +05 m=+270.687389301
+14/12/2022 21:35:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:35:39.6873238 +0500 +05 m=+300.691249901
+14/12/2022 21:36:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:36:09.6898044 +0500 +05 m=+330.693730501
+14/12/2022 21:36:39 | expiredJobsCron() - getting expired jobs 2022-12-14 21:36:39.6835547 +0500 +05 m=+360.687480801
+14/12/2022 21:37:09 | expiredJobsCron() - getting expired jobs 2022-12-14 21:37:09.6860387 +0500 +05 m=+390.689964801
+14/12/2022 21:37:26 | AddListener() - `discount_removed` listener added
+14/12/2022 21:37:26 | AddListener() - `add_discount` listener added
+14/12/2022 21:37:26 | AddListener() - `auction_finished` listener added
+14/12/2022 21:37:26 | AddListener() - `auction_removed` listener added
+14/12/2022 21:37:26 | AddListener() - `permission_started` listener added
+14/12/2022 21:37:26 | AddListener() - `permission_ended` listener added
+14/12/2022 21:37:26 | channelCron() - Started at: 2022-12-14 21:37:26.2992718 +0500 +05 m=+0.673008201
+14/12/2022 21:37:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:37:56.3093377 +0500 +05 m=+30.683074101
+14/12/2022 21:38:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:38:26.3036146 +0500 +05 m=+60.677351001
+14/12/2022 21:38:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:38:56.3083141 +0500 +05 m=+90.682050501
+14/12/2022 21:39:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:39:26.3146644 +0500 +05 m=+120.688400801
+14/12/2022 21:39:56 | expiredJobsCron() - getting expired jobs 2022-12-14 21:39:56.3025303 +0500 +05 m=+150.676266701
+14/12/2022 21:40:26 | expiredJobsCron() - getting expired jobs 2022-12-14 21:40:26.3026135 +0500 +05 m=+180.676349901

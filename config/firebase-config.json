@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "bizhub-app",
+  "private_key_id": "4db6e37ae9808c7344d134ea996377d89a7c473b",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDDs8V5AJoqSMWl\nKMfecjJMw4SB5hx90utFGhh3GvfPo518wsjnmTzkjwhfv2AyhrM7ZsGFn9vUZTeq\nF+BuQIhRyQzZdmDyDlVKbgQ7U8ETSGQ9JU2ldIBk+XEDnDGzsPbuR76nv8pAxdA5\n+5WjANpX0OBfxTNAMUtfoht2rUtbFDqUHWObTV3ggh66+zh1rwaGm2clNnbqEM5e\nmviq+1h518/nHD2/nk/AwG9iX9w6BuU9slmXRw2gz1QYjWjUa3p6tZc6NmSNFudp\nix9/prkhAYTg1Sq+HJ7d7RBiLbdD1eDsKLYTW3CKmZUbFG7ikJDaddWFIdbFMeNm\nz0/fEzp7AgMBAAECggEAOAUV2fVaLBB4wzZRQFPgIik1nRmJvlrKDhXSOwX1OfLT\n+gqoB+PNkn9/HiliGBSG6dIYQ2/nNX1j2cTL8cN3QjITA4znY2LG929WtsTa1/I4\n/2fWOi6HMmBVAXuMnqthhAP1h39XHgOB/5cM1oQ//DNGhyOj8BQsR0vYILiqgX9f\npKt/nqVwaUkXEaJxJUTmseuLDhw/RYD0uivm/4jiPly2+fuFvY99/ZxgTewk0bPl\nDEihqTCAxjE4HHkFITVSnq3xBxQIAymesk7p+F6i9x3pXji4VM/+JQ/BiVawbqqv\nkXDxtsNdgARR/BfIfY3pAswZuBIADckLRkRJP9IoQQKBgQD/Qs0+CuGoY04GdB6N\nbXy6KE+gDewrDUmELb4IoPx0H8bUrNtV5OPp5uIx2GyHTPUx4g63qa0N59RRjjQf\nITMbbEH3i4xWpujaVPyMaY4MwybNr/+kg/5NDXBRc3I605IvN1cMVBUHd22IQQ6H\nm3yXtPSn2yLT0dmbCdX6ER1ppwKBgQDERNMzEl8O6ln4sKAmnVjjzRJJhlL01M5a\n9ctYd2JR95xRDT32P/cMC4HpjpWExW5m1BVqAlBkgLtHWRkvJEkFl8ckQOGGNrlT\nHOLnQ9Rlw+o1/PNY2Lxa6mOMC4y84k2LHRFf2BicVoEQqrqfsxFDewXdli+W/GQO\n8zIb/5XbDQKBgHKZnCmhmwQNaWdOVLUsFZZCKNVzyrbdZUcZfjrDg/PinFK5NFPQ\nyl4l0SGNx9PKwj5d/juIyu/2SAVBcbcUIazLIqavmRcCIoJ7K1MixKqIJvCrdnt2\n4wHW6bk3um4ctIHMN6GKUlKi1KMaihppvTsi+8AsiutMSITpmo6Fho37AoGBALbK\n1tyQ9qFgmAzrCy0LjJcVDjwV8zr823eRxiINhi+K6jX+nD+1ETRRn1vTpON0MT9p\ntMv3fcIstr9bdv4V0EB6PElCeAhU/UMv+w+id7WTwpUnkcikisAt3iq3MwtTxR6U\nIvNdwoYQdsH8EDXeQ2zSrgLS9l2rkNDvpTK4VmwdAoGBANTXOSJvzo56HpBqLzqt\nYxo4NaDquCgxTZCEGiiCW8dUDgym6pDKICgb43bwnje+y1RL4qCQWPUhFIvlTvjB\nPb5Tljrpuk0nABYSAFvJ2WNMEs5H6pUtXUpBb8KV24D2A9x2rIQjYuUnMvnYBJNg\nDLJ/2KcP9uQEmWquwDTEHrL0\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-pst0r@bizhub-app.iam.gserviceaccount.com",
+  "client_id": "117742212355421883585",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-pst0r%40bizhub-app.iam.gserviceaccount.com"
+}

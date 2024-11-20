@@ -1,0 +1,35 @@
+1. sistem gurulan wagty, db bos wagty haysy collection-lary seed etmeli?
+2. ilkinji employee sisteme gosulanson haysy collection-lary seed etmeli?
+3. ilkinji customer gosulanson haysy collection-lary seed etmeli?
+4. ilkinji seller gosulanson haysy collection-lary seed etmeli?
+5. 
+
+1>>
+attributes
+categories
+brands
+cities
+collections
+packages
+employee_jobs
+2>>
+cashier_works
+employees 
+everyday_work
+ojocron_jobs
+reasons
+statistics
+3>>
+customers
+favorite_posts
+favorite_products
+favorite_sellers
+feedbacks
+notification_tokens
+4>>
+wallets
+wallet_history
+tasks
+suggestions
+sellers
+auctions

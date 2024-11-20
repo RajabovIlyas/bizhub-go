@@ -1,0 +1,139 @@
+**************************************
+  Name: StatisticsService
+  Created at: 12/12/2022 10:27:20
+**************************************
+
+12/12/2022 10:27:20 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:27:20.4809701 +0500 +05 m=+0.836545801
+12/12/2022 10:27:20 | createNewStatisticDocument() - Date => 2022-12-12 00:00:00 +0000 UTC | ObjectID => ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:27:20 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:29:58 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 10:29:58 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 10:34:46 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:34:46.9672345 +0500 +05 m=+0.702979901
+12/12/2022 10:34:46 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:39:43 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:39:43.7941037 +0500 +05 m=+0.696538301
+12/12/2022 10:39:43 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:46:03 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 10:46:03 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 10:48:16 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:48:16.4251183 +0500 +05 m=+0.697211501
+12/12/2022 10:48:16 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:50:15 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:50:15.641671 +0500 +05 m=+0.675945701
+12/12/2022 10:50:15 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 10:52:30 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 10:52:30.5940811 +0500 +05 m=+0.673741901
+12/12/2022 10:52:30 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 11:00:00 | @Hourly Cron job - successfuly created new hour activity object
+12/12/2022 11:06:14 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 11:06:14.2682105 +0500 +05 m=+0.676566101
+12/12/2022 11:06:14 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 11:06:25 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 11:06:25 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 11:08:53 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 11:08:53.11818 +0500 +05 m=+0.683023001
+12/12/2022 11:08:53 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 11:09:18 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 11:16:11 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 11:16:11.5678493 +0500 +05 m=+0.683106301
+12/12/2022 11:16:11 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 11:16:35 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 11:16:35 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 12:00:00 | @Hourly Cron job - successfuly created new hour activity object
+12/12/2022 12:48:43 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 12:48:43.1263909 +0500 +05 m=+0.706699601
+12/12/2022 12:48:43 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 12:49:32 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 12:49:32 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 12:53:49 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 12:53:49.7332632 +0500 +05 m=+0.689879301
+12/12/2022 12:53:49 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:00:00 | @Hourly Cron job - successfuly created new hour activity object
+12/12/2022 13:07:46 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:07:46.3957684 +0500 +05 m=+0.682195801
+12/12/2022 13:07:46 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:08:36 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:08:36.9023699 +0500 +05 m=+0.680373301
+12/12/2022 13:08:36 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:09:28 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:09:28.5186629 +0500 +05 m=+0.681227201
+12/12/2022 13:09:28 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:10:12 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:10:12.7291607 +0500 +05 m=+0.681046501
+12/12/2022 13:10:12 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:10:25 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 13:10:25 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 13:11:44 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:11:44.6227251 +0500 +05 m=+0.667406901
+12/12/2022 13:11:44 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:12:11 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:12:11.3038021 +0500 +05 m=+0.675718101
+12/12/2022 13:12:11 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:25:55 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 13:25:55 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 13:33:50 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:33:50.6074456 +0500 +05 m=+0.684198401
+12/12/2022 13:33:50 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:41:55 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:41:55.4410127 +0500 +05 m=+0.684315601
+12/12/2022 13:41:55 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:42:07 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 13:42:07 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 13:45:27 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:45:27.4362129 +0500 +05 m=+0.670126601
+12/12/2022 13:45:27 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 13:47:47 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 13:47:47.1273636 +0500 +05 m=+0.700652201
+12/12/2022 13:47:47 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:03:13 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:03:13.8575918 +0500 +05 m=+0.681228801
+12/12/2022 14:03:13 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:03:25 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 14:03:25 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 14:28:09 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:28:09.7734536 +0500 +05 m=+0.667403101
+12/12/2022 14:28:09 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:28:14 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 14:28:14 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 14:39:13 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:39:13.6383037 +0500 +05 m=+0.663317901
+12/12/2022 14:39:13 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:39:18 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 14:39:18 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 14:42:28 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:42:28.7503364 +0500 +05 m=+0.680976801
+12/12/2022 14:42:28 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:44:21 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 14:44:21 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 14:47:43 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:47:43.737727 +0500 +05 m=+0.665189201
+12/12/2022 14:47:43 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:58:16 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 14:58:16.5626921 +0500 +05 m=+0.687406701
+12/12/2022 14:58:16 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 14:58:29 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 14:58:29 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 15:00:57 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 15:00:57.3713077 +0500 +05 m=+0.707431401
+12/12/2022 15:00:57 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 16:00:00 | @Hourly Cron job - successfuly created new hour activity object
+12/12/2022 17:17:12 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:17:12.2035206 +0500 +05 m=+0.679046001
+12/12/2022 17:17:12 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:17:18 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 17:17:18 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 17:20:48 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:20:48.7327872 +0500 +05 m=+0.686830001
+12/12/2022 17:20:48 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:26:31 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:26:31.2459681 +0500 +05 m=+0.674931201
+12/12/2022 17:26:31 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:26:43 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 17:26:43 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 17:28:18 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 17:28:18 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 17:31:05 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:31:05.3166027 +0500 +05 m=+0.671740301
+12/12/2022 17:31:05 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:31:28 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 17:31:28 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 17:33:36 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:33:36.1871424 +0500 +05 m=+0.686584401
+12/12/2022 17:33:36 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:37:20 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:37:20 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:37:20.330852 +0500 +05 m=+0.677632501
+12/12/2022 17:38:08 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:38:08.5074122 +0500 +05 m=+0.676367701
+12/12/2022 17:38:08 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:45:08 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:45:08.2021819 +0500 +05 m=+0.683014301
+12/12/2022 17:45:08 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:49:35 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 17:49:35.6735335 +0500 +05 m=+0.697911301
+12/12/2022 17:49:35 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 17:49:54 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 17:49:54 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 18:00:00 | @Hourly Cron job - successfuly created new hour activity object
+12/12/2022 18:12:30 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 18:12:30.2976904 +0500 +05 m=+0.682564101
+12/12/2022 18:12:30 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 18:12:41 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 18:12:41 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 18:14:45 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 18:14:45.8784147 +0500 +05 m=+0.695733901
+12/12/2022 18:14:45 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 18:18:01 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 18:18:01.3457201 +0500 +05 m=+0.679892601
+12/12/2022 18:18:01 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 18:23:16 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 18:23:16.9713055 +0500 +05 m=+0.679965601
+12/12/2022 18:23:16 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 18:23:39 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 18:23:39 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 18:39:26 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-12 18:39:26.5802132 +0500 +05 m=+0.667301001
+12/12/2022 18:39:26 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6396bbb8f6cd750c78111091")
+12/12/2022 18:45:44 | Run.NewActiveUser() / StatisticsServiceWriter - active user +1
+12/12/2022 18:45:44 | Run.NewActiveSeller() / StatisticsServiceWriter - active seller +1
+12/12/2022 19:00:00 | @Hourly Cron job - successfuly created new hour activity object

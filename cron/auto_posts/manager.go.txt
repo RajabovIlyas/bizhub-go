@@ -1,0 +1,700 @@
+package autoposts
+
+import (
+	"context"
+	"fmt"
+	"os"
+	"os/signal"
+	"time"
+
+	"github.com/devzatruk/bizhubBackend/config"
+	"github.com/devzatruk/bizhubBackend/models"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
+	"go.mongodb.org/mongo-driver/mongo"
+)
+
+// TODO: error dorese file-a log etmeli.
+// type HandlerFunc func(interface{})
+type HandlerFunc func(Job)
+type Listeners map[string]HandlerFunc
+
+type OjoScheduler struct {
+	db        *mongo.Database
+	listeners Listeners
+}
+
+func NewScheduler(db *mongo.Database, listeners Listeners) *OjoScheduler {
+	return &OjoScheduler{db: db, listeners: listeners}
+}
+func RunNewScheduler() {
+	ctx, cancel := context.WithCancel(context.Background())
+	interrupt := make(chan os.Signal, 1)
+	signal.Notify(interrupt, os.Interrupt)
+	sc := NewScheduler(config.MI.DB, eventListeners)
+	sc.CheckEventsInInterval(ctx, time.Minute*1) // every 1 minute, in production 20
+	go func() {
+		for range interrupt {
+			fmt.Printf("\n❌ Interrupt received, closing scheduler...\n")
+			cancel()
+			signal.Stop(interrupt)
+			// close(interrupt)
+			break
+		}
+	}()
+	<-ctx.Done()
+	fmt.Printf("\nScheduler-den cykdym..\n")
+}
+
+// func (sc *OjoScheduler)Schedule(event string, payload interface{}, runAt time.Time){
+// 	fmt.Printf("\nScheduling a job:{ event: %v, to run at: %v}\n", event, runAt.Format(time.RFC3339))
+// munun edyan isini ScheduleAutoPostTimes() edyar!!
+// }
+func (sc *OjoScheduler) AddListener(event string, listener HandlerFunc) {
+	sc.listeners[event] = listener
+}
+func (sc *OjoScheduler) CheckDueEvents() []Job {
+	events := make([]Job, 0)
+	aggregationArray := bson.A{
+		bson.M{
+			"$match": bson.M{
+				"run_at": bson.M{
+					"$lte": time.Now(),
+				},
+			},
+		},
+		bson.M{
+			"$sort": bson.M{
+				"run_at": 1,
+			},
+		},
+		bson.M{
+			"$limit": 10,
+		},
+	}
+	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	cronjobsColl := sc.db.Collection(config.CRON_JOBS)
+	defer cancel()
+	cursor, err := cronjobsColl.Aggregate(ctx, aggregationArray)
+	if err != nil {
+		fmt.Printf("\nCan't get the jobs from db ...\n")
+		return events
+	}
+	defer cursor.Close(ctx)
+	for cursor.Next(ctx) {
+		var event Job
+		err = cursor.Decode(&event)
+		if err != nil {
+			fmt.Printf("\nCan't decode jobs...\n")
+			// eger bir job-y decode edip bilmese we ol db-de pozulman galsa, onda bu yer
+			// hemise err berer!!! TODO
+			return []Job{}
+		}
+		events = append(events, event)
+	}
+	if err = cursor.Err(); err != nil {
+		fmt.Printf("\nCan't get jobs from the db...\n")
+		return []Job{}
+	}
+	if len(events) == 0 {
+		fmt.Printf("\nThere are no jobs at the moment...\n")
+		return []Job{}
+	}
+	return events
+}
+func (sc *OjoScheduler) CallHandlers(event Job) {
+	if handlerFunc, ok := sc.listeners[event.EventName]; ok {
+		go handlerFunc(event)
+	} else {
+		fmt.Printf("\nCouldn't find handlers for event: %v\n", event.EventName)
+	}
+}
+
+// func (sc *OjoScheduler) CallHandlers(event Job) {
+// 	handlerFunc, ok := sc.listeners[event.EventName]
+// 	if ok {
+// 		// go handlerFunc(event.Payload)
+// 		if ok:= handlerFunc(event.Payload); ok {
+// 		cronjobsColl := sc.db.Collection(config.CRON_JOBS)
+// 		deleteResult, err := cronjobsColl.DeleteOne(context.Background(), bson.M{"_id": event.Id})
+// 		if err != nil || deleteResult.DeletedCount == 0 {
+// 			fmt.Printf("\nCouldn't delete old jobs...\n")
+// 			return
+// 		}
+// 	} else {
+// 		fmt.Printf("\nCouldn't handle current task: %v\n", event)
+// 	}
+// 	} else {
+// 		fmt.Printf("\nCouldn't find handlers for event: %v\n", event.EventName)
+// 	}
+// }
+func (sc *OjoScheduler) CheckEventsInInterval(ctx context.Context, duration time.Duration) {
+	ticker := time.NewTicker(duration)
+	go func() {
+		for {
+			select {
+			case <-ctx.Done():
+				ticker.Stop()
+				return
+			case <-ticker.C:
+				fmt.Printf("\n⏰ a Tick Received...\n")
+				events := sc.CheckDueEvents()
+				for _, e := range events {
+					go sc.CallHandlers(e)
+				}
+			}
+		}
+	}()
+}
+
+const (
+	// ADD_DISCOUNT = "AddDiscount" // belli wagtlarda auto-post edyan cron-job
+	// NEW_PRODUCT_ADDED = "NewProductAdded" // bu cron job dal! auto-post
+	DISCOUNT_REMOVED = "RemoveDiscount"  // auto-post edyan cron-job
+	AUCTION_FINISHED = "AuctionFinished" // finish-auction edyan cron-job
+	DELETE_AUCTION   = "DeleteAuction"   // delete-auction edyan cron-job
+)
+
+var eventListeners = Listeners{
+	// ADD_DISCOUNT: AutoPostAddDiscount,
+	// NEW_PRODUCT_ADDED: AutoPostNewProductAdded,
+	// DISCOUNT_REMOVED: AutoPostDiscountRemoved,
+	// AUCTION_FINISHED: HandleAuctionFinished,
+	DELETE_AUCTION: DeleteAuction,
+}
+
+// type AutoPostAA struct {
+// 	models.Translation `bson:",inline"`
+// 	ProductId          primitive.ObjectID `bson:"product_id"`
+// }
+// func HandleAuctionFinished(job Job) {
+// 	// errRes := helpers.ErrorResponse("Admin.HandleAuctionFinished()")
+// 	fmt.Printf("\nCRON JOB: updating auction...\n")
+// 	// auctionsColl.update{is_finished:true, status:finished}
+// 	// update walletsColl.in_auction[].deleteByAuctionid()
+// 	// update wallet_history.AddPayment()
+// 	// sellers.transfer[]
+
+// 	// asaky setirlerin haysy ishlar????
+// 	// auctionId, err := primitive.ObjectIDFromHex(job.Payload.(string))
+// 	auctionId := job.Payload.(primitive.ObjectID)
+
+// 	fmt.Printf("\nHandleAuctionFinished(): auctionId: %v\n", auctionId)
+
+// 	// ???
+// 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+// 	defer cancel()
+// 	// begin transaction
+// 	now := time.Now()
+// 	transaction_manager := ojoTr.NewTransaction(&ctx, config.MI.DB, 3)
+// 	tr_auctionsColl := transaction_manager.Collection(config.AUCTIONS)
+// 	update_model_auc := ojoTr.NewModel().
+// 		SetFilter(bson.M{"_id": auctionId}).
+// 		SetUpdate(bson.M{
+// 			"$set": bson.M{
+// 				"is_finished": true,
+// 				"status":      config.STATUS_FINISHED,
+// 			},
+// 		}).
+// 		SetRollbackUpdate(bson.M{
+// 			"$set": bson.M{
+// 				"is_finished": false,
+// 				"status":      config.STATUS_PUBLISHED},
+// 		})
+
+// 	updateResult, err := tr_auctionsColl.FindOneAndUpdate(update_model_auc)
+// 	if err != nil {
+// 		trErr := transaction_manager.Rollback()
+// 		if trErr != nil {
+// 			err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 		}
+// 		fmt.Printf("FindOneAndUpdate(post): %v - %v", err, config.CANT_UPDATE)
+// 	}
+// 	var oldAuctionData models.NewAuction
+// 	err = updateResult.Decode(&oldAuctionData)
+// 	if err != nil {
+// 		trErr := transaction_manager.Rollback()
+// 		if trErr != nil {
+// 			err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 		}
+// 		fmt.Printf("Decode(oldAuctionData): %v - %v", err, config.CANT_DECODE)
+// 	}
+// 	// var winnerModel models.AuctionDetailNewWinner
+// 	tr_walletsColl := transaction_manager.Collection(config.WALLETS)
+// 	tr_walletHistoryColl := transaction_manager.Collection(config.WALLETHISTORY)
+// 	tr_sellersColl := transaction_manager.Collection(config.SELLERS)
+// 	walletHistoryNote := models.Translation{
+// 		En: "Auction, Banner advertisement in main page of bizhub app.",
+// 		Ru: "Аукцион, Баннерная реклама на главной странице приложения bizhub.",
+// 		Tm: "Bizhub programmasynyň esasy sahypasynda auksion, banner mahabaty.",
+// 		Tr: "Bizhub uygulamasının ana sayfasında müzayede, banner reklamı.",
+// 	}
+// 	var winnerIdsForNotificationService = make([]primitive.ObjectID, 0)
+// 	for _, winner := range oldAuctionData.Winners {
+// 		winnerIdsForNotificationService = append(winnerIdsForNotificationService, winner.SellerId)
+// 		update_model_wallet := ojoTr.NewModel().
+// 			SetFilter(bson.M{"seller_id": winner.SellerId}).
+// 			SetUpdate(bson.M{"$pull": bson.M{"in_auction": bson.M{"auction_id": auctionId}}}).
+// 			SetRollbackUpdate(bson.M{"$push": bson.M{
+// 				"in_auction": bson.M{
+// 					"$each": bson.A{fiber.Map{
+// 						"auction_id": auctionId,
+// 						"amount":     winner.LastBid,
+// 						"name":       oldAuctionData.Heading,
+// 					}},
+// 					// "$position": 0,
+// 				},
+// 			}})
+// 			// auctionid 6301f432680dc66abc356dbd
+// 			// seller 1 62ce628c8cae982f654a3578
+// 			// seller 2 635285737705a72c768c2b08 dal 632d8b5caa08ebcafdfa4180
+// 		updateResult, err := tr_walletsColl.FindOneAndUpdate(update_model_wallet)
+// 		if err != nil {
+// 			trErr := transaction_manager.Rollback()
+// 			if trErr != nil {
+// 				err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 			}
+// 			fmt.Printf("FindOneAndUpdate(wallets.in_auction[]): %v - %v", err, config.CANT_UPDATE)
+// 		}
+// 		var oldWallet models.SellerWallet
+// 		err = updateResult.Decode(&oldWallet)
+// 		if err != nil {
+// 			trErr := transaction_manager.Rollback()
+// 			if trErr != nil {
+// 				err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 			}
+// 			fmt.Printf("Decode(oldWallet): %v - %v", err, config.CANT_DECODE)
+// 		}
+// 		// insert into wallet_history
+// 		wh := models.MyWalletHistory{
+// 			SellerId:    winner.SellerId,
+// 			WalletId:    oldWallet.Id,
+// 			OldBalance:  oldWallet.Balance,
+// 			Amount:      float64(winner.LastBid),
+// 			Intent:      config.INTENT_PAYMENT,
+// 			Note:        &walletHistoryNote,
+// 			Code:        nil,
+// 			Status:      config.STATUS_COMPLETED,
+// 			CompletedAt: &now,
+// 			CreatedAt:   now,
+// 			EmployeeId:  nil,
+// 		}
+// 		insert_models_wh := ojoTr.NewModel().SetDocument(wh)
+// 		insertResult, err := tr_walletHistoryColl.InsertOne(insert_models_wh)
+// 		if err != nil {
+// 			trErr := transaction_manager.Rollback()
+// 			if trErr != nil {
+// 				err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 			}
+// 			fmt.Printf("InsertOne(wallet_history): %v - %v", err, config.CANT_INSERT)
+// 		}
+// 		// sellers.transfers[].push()
+// 		update_model_seller := ojoTr.NewModel().
+// 			SetFilter(bson.M{"_id": winner.SellerId}).
+// 			SetUpdate(bson.M{
+// 				"$push": bson.M{
+// 					"transfers": bson.M{
+// 						"$each":     bson.A{insertResult.InsertedID},
+// 						"$slice":    2,
+// 						"$position": 0,
+// 					},
+// 				},
+// 			}).
+// 			SetRollbackUpdate(bson.M{
+// 				"$pull": bson.M{
+// 					"transfers": bson.M{"_id": insertResult.InsertedID},
+// 				},
+// 			})
+
+// 		_, err = tr_sellersColl.FindOneAndUpdate(update_model_seller)
+// 		if err != nil {
+// 			errTr := transaction_manager.Rollback()
+// 			if errTr != nil {
+// 				err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), errTr.Error())
+// 			}
+// 			fmt.Printf("FindOneAndUpdate(seller.transfers[]): %v - %v", err, config.CANT_UPDATE)
+// 		}
+// 	}
+// 	if len(winnerIdsForNotificationService) > 0 {
+// 		// SendNotificationToWinners(winnerIdsForNotificationService)
+
+// 	}
+// 	tr_cronJobsColl := transaction_manager.Collection(config.CRON_JOBS)
+// 	delete_model_cron := ojoTr.NewModel().
+// 		SetFilter(bson.M{"_id": job.Id})
+// 	_, err = tr_cronJobsColl.FindOneAndDelete(delete_model_cron)
+// 	if err != nil {
+// 		trErr := transaction_manager.Rollback()
+// 		if trErr != nil {
+// 			err = fmt.Errorf("Source: %v - Rollback: %v", err.Error(), trErr.Error())
+// 		}
+// 		fmt.Printf("FindOneAndDelete(cron_job): %v - %v", err, config.CANT_UPDATE)
+// 	}
+// }
+func DeleteAuction(job Job) {
+	fmt.Printf("\nCRON JOB: deleting auction...\n")
+	// delete auction from db
+}
+
+// func AutoPostDiscountRemoved(job Job) {
+// 	// ilki cron_jobs-dan bar bolsa ayyr
+// 	payload := job.Payload.(ProductPayload)
+// 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+// 	defer cancel()
+// 	cronjobsColl := config.MI.DB.Collection(config.CRON_JOBS)
+// 	_, err := cronjobsColl.DeleteMany(ctx, bson.M{"payload.product_id": payload.ProductId})
+// 	if err != nil {
+// 		fmt.Printf("\nCouldn't delete from cron jobs...\n")
+// 	}
+// 	productsColl := config.MI.DB.Collection(config.PRODUCTS)
+// 	pResult, err := productsColl.Aggregate(ctx, bson.A{
+// 		bson.M{
+// 			"$match": bson.M{
+// 				"_id": payload.ProductId,
+// 			},
+// 		},
+// 		bson.M{
+// 			"$project": bson.M{
+// 				"image": bson.M{
+// 					"$first": "$images",
+// 				},
+// 				"seller_id": 1,
+// 			},
+// 		},
+// 	})
+
+// 	if err != nil {
+// 		fmt.Printf("\nAutoPost aggregate error: %v\n", err)
+// 	}
+
+// 	var product struct {
+// 		SellerId primitive.ObjectID `bson:"seller_id"`
+// 		Image    string             `bson:"image"`
+// 	}
+// 	if pResult.Next(ctx) {
+// 		err = pResult.Decode(&product)
+// 		if err != nil {
+// 			fmt.Printf("\nAutoPost decode error: %v\n", err)
+// 		}
+// 	}
+
+// 	if err = pResult.Err(); err != nil {
+// 		fmt.Printf("\nAutoPost result error: %v\n", err)
+// 	}
+// 	post := models.PostUpsert{
+// 		Image:           product.Image,
+// 		SellerId:        product.SellerId,
+// 		Title:           payload.Headings,
+// 		Body:            models.Translation{Tm: "", Ru: "", En: "", Tr: ""},
+// 		RelatedProducts: []primitive.ObjectID{payload.ProductId},
+// 		Viewed:          0,
+// 		Likes:           0,
+// 		Auto:            true,
+// 	}
+// 	postsColl := config.MI.DB.Collection(config.POSTS)
+// 	result, err := postsColl.InsertOne(ctx, post)
+// 	if err != nil {
+// 		fmt.Printf("\nAutoPost create post error: %v\n", err)
+// 	}
+// 	// gercek posts collection-a gosmaly
+// 	fmt.Printf("\nAutoPost - post published -> %v\n", result.InsertedID)
+// 	// indi products collection-da product-y tapyp, discount = 0 etmeli, discountDetails =nil etmeli
+// 	_, err = productsColl.UpdateOne(ctx, bson.M{"_id": payload.ProductId}, bson.M{
+// 		"$set": bson.M{
+// 			"discount":      0,
+// 			"discount_data": nil,
+// 		},
+// 	})
+// 	if err != nil {
+// 		fmt.Printf("\nAutoPost update product failed.\n")
+// 	}
+// 	fmt.Printf("\nProduct discount removed...\n")
+// }
+func AutoPostAddDiscount(job Job) { // bu dine discount doredilende
+	// bir yerde error berse, rollback() etmeli,
+	// hic error yok bolsa, onda TASK-y hem pozmaly!!
+
+	payload := job.Payload.(ProductPayload)
+	fmt.Printf("\nAutoPostAddDiscount()...%v\n", payload)
+	ctx := context.Background()
+	productsColl := config.MI.DB.Collection(config.PRODUCTS)
+	pResult, err := productsColl.Aggregate(ctx, bson.A{
+		bson.M{
+			"$match": bson.M{
+				"_id": payload.ProductId,
+			},
+		},
+		bson.M{
+			"$project": bson.M{
+				"image": bson.M{
+					"$first": "$images",
+				},
+				"seller_id": 1,
+			},
+		},
+	})
+
+	if err != nil {
+		fmt.Printf("\nAutoPost aggregate error: %v\n", err)
+
+	}
+
+	var product struct {
+		SellerId primitive.ObjectID `bson:"seller_id"`
+		Image    string             `bson:"image"`
+	}
+	if pResult.Next(ctx) {
+		err = pResult.Decode(&product)
+		if err != nil {
+			fmt.Printf("\nAutoPost decode error: %v\n", err)
+		}
+	}
+
+	if err = pResult.Err(); err != nil {
+		fmt.Printf("\nAutoPost result error: %v\n", err)
+	}
+
+	post := models.PostUpsert{
+		Image:           product.Image,
+		SellerId:        product.SellerId,
+		Title:           payload.Headings,
+		Body:            models.Translation{Tm: "", Ru: "", En: "", Tr: ""},
+		RelatedProducts: []primitive.ObjectID{payload.ProductId},
+		Viewed:          0,
+		Likes:           0,
+		Auto:            true,
+		Status:          config.STATUS_PUBLISHED,
+	}
+	postsColl := config.MI.DB.Collection("posts")
+	result, err := postsColl.InsertOne(ctx, post)
+	if err != nil {
+		fmt.Printf("\nAutoPost create post error: %v\n", err)
+	}
+	// gercek posts collection-a gosmaly
+	fmt.Printf("\nAutoPost - post published -> %v\n", result.InsertedID)
+}
+
+type Job struct {
+	Id        primitive.ObjectID `bson:"_id,omitempty"`
+	EventName string             `bson:"event_name"`
+	Payload   interface{}        `bson:"payload"`
+	RunAt     time.Time          `bson:"run_at"`
+}
+
+type ProductForDiscount struct {
+	Id       primitive.ObjectID `bson:"_id"`
+	Discount float64            `bson:"discount"`
+	Seller   struct {
+		Id   primitive.ObjectID `bson:"_id"`
+		Name string             `bson:"name"`
+	} `bson:"seller"`
+	Name models.Translation `bson:"name"`
+}
+
+type ProductPayload struct {
+	ProductId primitive.ObjectID `bson:"product_id"`
+	Headings  models.Translation `bson:"headings"`
+}
+
+var monthDurations = []int{31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31}
+
+// func ScheduleAutoPostAddDiscountTimes(duration int64, durationType string, productObjId primitive.ObjectID) {
+// 	fmt.Printf("\ninside ScheduleAutoPostTimes...\n")
+// 	if duration < 1 {
+// 		return
+// 	}
+// 	now := time.Now()
+// 	y, m, _ := now.Date()
+// 	// currentMonth := int64(m) - 1
+// 	thisMonthDuration := time.Date(y, m+1, 0, 0, 0, 0, 0, time.Local)
+// 	_, _, lastDay := thisMonthDuration.Date()
+// 	// fmt.Printf("\nayyn sonky guni nacesi? %v\n", thisMonthDuration.Format(time.RFC3339))
+// 	if durationType == config.DURATION_MONTH {
+// 		if duration > 2 {
+// 			duration = 2
+// 		}
+// 		if duration == 2 {
+// 			nextMonthDuration := time.Date(y, m+2, 0, 0, 0, 0, 0, time.Local)
+// 			_, _, numOfDays := nextMonthDuration.Date()
+// 			if lastDay+numOfDays > 60 {
+// 				duration = 60 // max 60 days
+// 			} else {
+// 				duration = int64(lastDay) + int64(numOfDays) // 31.jan + 28.feb = 59 days
+// 			}
+// 		} else { // duration 1-den kici bolanok!
+// 			duration = int64(lastDay) // 1 month ~ 30 days
+// 		}
+// 		duration = duration * 24 // cast to hours
+// 	} else if durationType == config.DURATION_DAY {
+// 		if duration > 60 {
+// 			duration = 60
+// 		}
+// 		duration = duration * 24 // cast to hours
+// 	} else if durationType == config.DURATION_HOUR {
+// 		// 1000 sagat beren bolsa name etmeli?
+// 		max_hours := int64(60 * 24) // 60 days * 24 hours
+// 		if duration > max_hours {
+// 			duration = max_hours
+// 		}
+// 	}
+// 	// indi db-e ekle
+// 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+// 	defer cancel()
+// 	productsColl := config.MI.DB.Collection(config.PRODUCTS)
+// 	aggregationArray := bson.A{
+// 		bson.M{
+// 			"$match": bson.M{
+// 				"_id": productObjId,
+// 			},
+// 		},
+// 		bson.M{
+// 			"$lookup": bson.M{
+// 				"from":         "sellers",
+// 				"localField":   "seller_id",
+// 				"foreignField": "_id",
+// 				"as":           "seller",
+// 				"pipeline": bson.A{
+// 					bson.M{
+// 						"$project": bson.M{
+// 							"name": 1,
+// 						},
+// 					},
+// 				},
+// 			},
+// 		},
+// 		bson.M{
+// 			"$unwind": bson.M{
+// 				"path": "$seller",
+// 			},
+// 		},
+// 		bson.M{
+// 			"$project": bson.M{
+// 				"name":     "$heading",
+// 				"discount": 1,
+// 				"seller":   1,
+// 			},
+// 		},
+// 	}
+// 	cursor, err := productsColl.Aggregate(ctx, aggregationArray)
+// 	if err != nil {
+// 		fmt.Printf("\nError: Aggregate(products)...\n")
+// 	}
+// 	defer cursor.Close(ctx)
+// 	var product ProductForDiscount
+// 	for cursor.Next(ctx) {
+// 		err = cursor.Decode(&product)
+// 		if err != nil {
+// 			fmt.Printf("\nCannot decode product info...\n")
+// 		}
+// 		break
+// 	}
+// 	if err = cursor.Err(); err != nil {
+// 		fmt.Printf("\nError cursor.Err()...\n")
+// 	}
+// 	fmt.Printf("\nproduct: %v\n", product)
+// 	var batch []interface{}
+// 	twoDays := int64(2 * 24) // hours, test-den son ulan
+// 	// twoDays := int64(4)                                       // test maksatly: minute edyas
+// 	// duration = int64(10)                                      // test maksatly: 10 minutda test tamamlansyn
+// 	endTime := now.Add(time.Hour * time.Duration(duration)) // test maksatly: time.Minute edildi, son Hour etmeli
+// 	days := duration / twoDays                              // bitin san beryar, her 2gunden bir auto post ucin
+// 	threeHour := endTime.Add(time.Hour * -3)                // sonky -3h sagatda
+// 	// threeHour := endTime.Add(time.Minute * -3) // test maksatly: sonky -3minute
+// 	oneHour := endTime.Add(time.Hour * -1) // sonky -1h sagatda auto post ucin
+// 	// oneHour := endTime.Add(time.Minute * -1) // test maksatly: sonky -1minute auto post ucin
+// 	remainingTime := duration - days*twoDays // sonky 24 sagatlyk wagty alyas
+// 	fmt.Printf("\nendTime: %v\n", endTime)
+// 	fmt.Printf("\nnumber of days: %v\n", days)
+// 	fmt.Printf("\n-three hours: %v\n", threeHour)
+// 	fmt.Printf("\n-one hour: %v\n", oneHour)
+// 	fmt.Printf("\nremaining time: %v\n", remainingTime)
+// 	var daysLeftStr models.Translation
+// 	var autoPost Job
+// 	payload := ProductPayload{ProductId: productObjId}
+// 	autoPost.EventName = ADD_DISCOUNT
+
+// 	daysLeft := int64(0)
+// 	if days > 0 {
+// 		numberOfDays := days
+// 		if remainingTime == 0 {
+// 			numberOfDays = days - 1 // eger goni 2d beren bolsa, dine -3h we -1h auto post etmeli
+// 		}
+// 		for i := 1; i <= int(numberOfDays); i++ {
+// 			nextTime := now.Add(time.Hour * time.Duration(twoDays*int64(i)))
+// 			fmt.Printf("\nnext time: %v\n", nextTime.Format(time.RFC3339))
+// 			autoPost.RunAt = nextTime
+// 			daysLeft = int64(endTime.Sub(nextTime).Hours() / 24)
+// 			daysLeftStr.En = fmt.Sprintf("%v days left.", daysLeft)
+// 			if daysLeft > 1 {
+// 				daysLeftStr.Ru = fmt.Sprintf("осталось %v дней.", daysLeft)
+// 			} else {
+// 				daysLeftStr.Ru = fmt.Sprintf("остался %v день.", daysLeft)
+// 			}
+// 			daysLeftStr.Tm = fmt.Sprintf("%v gün galdy.", daysLeft)
+// 			daysLeftStr.Tr = fmt.Sprintf("%v gün kaldı.", daysLeft)
+
+// 			payload.Headings.En = fmt.Sprintf(os.Getenv("AnnounceEn"), product.Seller.Name,
+// 				product.Discount, product.Name.En, daysLeftStr.En)
+// 			payload.Headings.Tm = fmt.Sprintf(os.Getenv("AnnounceTm"), product.Seller.Name,
+// 				product.Name.Tm, product.Discount, daysLeftStr.Tm)
+// 			payload.Headings.Ru = fmt.Sprintf(os.Getenv("AnnounceRu"), product.Seller.Name,
+// 				product.Discount, product.Name.Ru, daysLeftStr.Ru)
+// 			payload.Headings.Tr = fmt.Sprintf(os.Getenv("AnnounceTr"), product.Seller.Name,
+// 				product.Name.Tr, product.Discount, daysLeftStr.Tr)
+// 			autoPost.Payload = payload
+// 			batch = append(batch, autoPost)
+// 		}
+// 	}
+// 	if remainingTime >= 3 || remainingTime == 0 {
+// 		daysLeftStr.En = "3 hours left."
+// 		daysLeftStr.Ru = "осталось 3 часов."
+// 		daysLeftStr.Tm = "3 sagat galdy."
+// 		daysLeftStr.Tr = "3 saat kaldı."
+// 		autoPost.RunAt = threeHour
+// 		payload.Headings.En = fmt.Sprintf(os.Getenv("AnnounceEn"), product.Seller.Name,
+// 			product.Discount, product.Name.En, daysLeftStr.En)
+// 		payload.Headings.Tm = fmt.Sprintf(os.Getenv("AnnounceTm"), product.Seller.Name,
+// 			product.Name.Tm, product.Discount, daysLeftStr.Tm)
+// 		payload.Headings.Ru = fmt.Sprintf(os.Getenv("AnnounceRu"), product.Seller.Name,
+// 			product.Discount, product.Name.Ru, daysLeftStr.Ru)
+// 		payload.Headings.Tr = fmt.Sprintf(os.Getenv("AnnounceTr"), product.Seller.Name,
+// 			product.Name.Tr, product.Discount, daysLeftStr.Tr)
+// 		autoPost.Payload = payload
+// 		batch = append(batch, autoPost)
+// 	}
+// 	daysLeftStr.En = "1 hour left."
+// 	daysLeftStr.Ru = "остался 1 час."
+// 	daysLeftStr.Tm = "1 sagat galdy."
+// 	daysLeftStr.Tr = "1 saat kaldı."
+// 	autoPost.RunAt = oneHour
+// 	payload.Headings.En = fmt.Sprintf(os.Getenv("AnnounceEn"), product.Seller.Name,
+// 		product.Discount, product.Name.En, daysLeftStr.En)
+// 	payload.Headings.Tm = fmt.Sprintf(os.Getenv("AnnounceTm"), product.Seller.Name,
+// 		product.Name.Tm, product.Discount, daysLeftStr.Tm)
+// 	payload.Headings.Ru = fmt.Sprintf(os.Getenv("AnnounceRu"), product.Seller.Name,
+// 		product.Discount, product.Name.Ru, daysLeftStr.Ru)
+// 	payload.Headings.Tr = fmt.Sprintf(os.Getenv("AnnounceTr"), product.Seller.Name,
+// 		product.Name.Tr, product.Discount, daysLeftStr.Tr)
+// 	autoPost.Payload = payload
+// 	batch = append(batch, autoPost)
+// 	// discount removed
+// 	autoPost.EventName = DISCOUNT_REMOVED
+// 	autoPost.RunAt = endTime
+// 	payload.Headings.En = fmt.Sprintf(os.Getenv("AnnounceEnRem"), product.Seller.Name,
+// 		product.Discount, product.Name.En)
+// 	payload.Headings.Tm = fmt.Sprintf(os.Getenv("AnnounceTmRem"), product.Seller.Name,
+// 		product.Name.Tm, product.Discount)
+// 	payload.Headings.Ru = fmt.Sprintf(os.Getenv("AnnounceRuRem"), product.Seller.Name,
+// 		product.Discount, product.Name.Ru)
+// 	payload.Headings.Tr = fmt.Sprintf(os.Getenv("AnnounceTrRem"), product.Seller.Name,
+// 		product.Name.Tr, product.Discount)
+// 	autoPost.Payload = payload
+// 	batch = append(batch, autoPost)
+
+// 	cronjobsColl := config.MI.DB.Collection(config.CRON_JOBS)
+// 	insertResult, err := cronjobsColl.InsertMany(ctx, batch)
+// 	if err != nil || len(insertResult.InsertedIDs) == 0 {
+// 		fmt.Printf("\nInserMany error or failed to insert any...\n")
+// 	}
+// 	fmt.Printf("\nScheduling done...\n")
+// }

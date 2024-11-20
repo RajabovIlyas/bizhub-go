@@ -1,0 +1,66 @@
+*name ucin database seeder doredyas?
+*birnace collections-dan maglumat alyp, solary dogry ulanyarmy gormek ucin.
+*statistic service dogry netije beryarmi?
+*collections arasynda relational integrity barmy? data integrity barmy? gormek ucin.
+*kabir collections-da default bolmaly maglumatlar bolup biler. solary install edende 
+automatically insert etmek ucin.
+*gaty kop maglumat bar bolsa, optimal search, fetch edyarmi?
+* "status" field-leri hasaba gosmaly. ahli route-larda. meselem GetAllPosts()
+
+$match : bson.M{
+    "status":"published", bolmasa getirmesin!!!
+}
+
+
+galan isler:
+
+1. post details-de related products getirmeli, [{_id, image}, ] --- DONE
+2. like-lary halletmeli. 
+3. favorites page ishletmeli.
+4. add feedback etmeli.
+5. seller profile getirmeli.
+6. seller edit profile etmeli.
+7. add post we add product halletmeli.
+8. chat bar.
+9. wallet bilen baglansykly ishler.
+10. sign up page etmeli.
+11. 
+
+
+3. CRON JOBS like database optimization, calculating trending products...
+cron jobs bilen database-de index-leri optimization etmek, kabir data-lary duplication 
+etmek arkaly query-leri tizlendirmek...
+4. CACHE usage for images, responses, user preferences...
+>>>>SERVER side CACHE-ing responses and serving from CACHE if the request is the same
+
+GO-da implement edilen fastcache, bigcache yaly redis alternative-leri bar.
+super hyzly! 
+
+
+5. security, session management, id tokens, access tokens, refresh tokens,...
+6. CORS policy....
+7. image resizing in the server and the app
+8. file management in the server
+9. trust token from google for browsers, to track user without authentication
+10. firebase bize-de gerekmi? name ucin?
+11. how to make use of indexing collections in mongodb?
+12. load balancer, nginx, proxy, 
+13. request throttling when the same ip address sends the same request
+many times in a short period of time
+14. encrypting important data on the mobile device and the server as well
+
+load balancer
+utilizing multiple CPUs, go routines
+optimization with cron jobs and de normalizing collections in mongodb for fast retrieval of data
+caching responses for a set time duration with request path as key
+caching data in mobile app 
+
+
+YENISIN YANYNDA INSTALL ETMELI ZATLAR:
+1. fastcache for golang 
+2. fiber websockets for realtime communication
+3. cron jobs in golang fiber.
+4. h2non/bimg library for image processing
+5. sending notifications to mobile clients in golang fiber
+ https://github.com/firebase/firebase-admin-go 
+ 
