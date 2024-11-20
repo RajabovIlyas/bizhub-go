@@ -1,9 +1,0 @@
-**************************************
-  Name: StatisticsService
-  Created at: 25/11/2022 19:24:56
-**************************************
-
-25/11/2022 19:24:56 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-11-25 19:24:56.9260169 +0500 +05 m=+0.690211801
-25/11/2022 19:24:56 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("6380b4a8d7a7b064ffb2cccd")
-25/11/2022 20:00:00 | @Hourly Cron job - successfuly created new hour activity object
-25/11/2022 21:00:00 | @Hourly Cron job - successfuly created new hour activity object

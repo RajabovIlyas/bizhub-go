@@ -1,8 +1,0 @@
-**************************************
-  Name: StatisticsService
-  Created at: 17/12/2022 11:43:55
-**************************************
-
-17/12/2022 11:43:55 | Run() / StatisticsServiceWriter - StatisticServiceWriter started at: 2022-12-17 11:43:55.9485074 +0500 +05 m=+0.796062101
-17/12/2022 11:43:55 | createNewStatisticDocument() - Date => 2022-12-17 00:00:00 +0000 UTC | ObjectID => ObjectID("639d652bd8a07cf1532767a9")
-17/12/2022 11:43:55 | setDefaultRecentStatisticId() - recentStatisticId: ObjectID("639d652bd8a07cf1532767a9")
