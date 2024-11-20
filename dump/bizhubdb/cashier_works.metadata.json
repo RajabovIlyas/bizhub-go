@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"615c8e16e5484591baeb60ed4c2588d5","collectionName":"cashier_works","type":"collection"}

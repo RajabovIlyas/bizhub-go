@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"fa808c15ffd84423b3467141fd7b5ec6","collectionName":"ojocron_jobs","type":"collection"}
