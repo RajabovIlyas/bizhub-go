@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  web:
+    container_name: go-server
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - VIEWS_DIR=/app/internal/views
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+volumes:
+  mongo-data:
+    driver: local
